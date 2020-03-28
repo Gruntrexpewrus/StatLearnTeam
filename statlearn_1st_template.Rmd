@@ -93,10 +93,7 @@ Mainly, we will use Python and some of its native libraries(such as BeautifulSou
 
 Model \& Methods
 ----------
-*To the best of your current knowledge, what type of statistical/data analysis tools do you feel will be relevant?*
-*Explain briefly why.*
 
-*If there's some cutting edge methods you may like to implement, cite it here adding the relevant paper(s)/book(s) in the last Section of this document.*
 Our plan is to develop a model for the spread of media responses to COVID-19. In particular we would like to be able to do some kinds of preditcions like "How many articles can we expect on a given website given the pandemic situation?" or "What to we expect is the emotional response to a pandemic situation?".<br/>
 The methods we'll try to use will be decided based on how the data will behave. Anyway we can already say that for analysing specific articles we will need some Text Analytics algorithms like Naive-Bayes, Decision trees or SVM. But again we need to perform a bunch of tasks and see what methods fits best for our purposes.<br/> Moreover we need to develop an interpolation / extrapolation model for predicting the spread of COVID-19 cases as well as of news talking about COVID-19.
 *what methods fit best
