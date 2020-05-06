@@ -82,6 +82,7 @@ for i in (list(range(1, 1000))[::-1]): # From last page to most recent
             #print("\n" * 3)
 
 
+# Saving dataframe to file
 articles_df.to_csv('/home/marco/workspace/git/StatLearnTeam/dataset/intopic_it_articles.csv', 
                    sep=';',
                    na_rep='NULL',
