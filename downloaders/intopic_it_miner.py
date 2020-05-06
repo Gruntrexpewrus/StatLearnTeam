@@ -10,7 +10,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning) # No SSL cer
 website_url = "https://www.intopic.it/crono/varie/cronaca/?pagina="
 http = urllib3.PoolManager()
 
-for i in range(983, 1000):
+for i in range(1, 1000):
     url = website_url + str(i)
     file_path = "/home/marco/workspace/git/StatLearnTeam/web_pages_index/" + str(i) + ".html"
 
@@ -35,4 +35,4 @@ for i in range(983, 1000):
         
     except Exception as e: # In case something happens, wait 
         print(e)
-        time.sleep(60 * 20)
+        time.sleep(60)
