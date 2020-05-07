@@ -31,14 +31,13 @@ which will contain only the info about one domain name.
 
 
 """
-
 import urllib3
 from bs4 import BeautifulSoup
 import pandas as pd
 import random
 import time
 
-class ParserTemplate:
+class LaGazzettaDelMezzogiornoParser:
     LOW_LIMIT_TIMEOUT = 9
     HIGH_LIMIT_TIMEOUT = 11
     
@@ -108,13 +107,10 @@ class ParserTemplate:
         
         
         
-        
-        
-        
-        
-        
-            
-            
+        div_article_content = soup.find('div', attrs={'class':'testo_articolo'})
+        paragraph = div_article_content.find('p').getText()
+        updated_content = paragraph       
+ 
             
         '''
         ######################################################################

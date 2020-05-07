@@ -38,7 +38,7 @@ class FanpageParser:
             try:
                 url = self.dataset['url'][index]
                 
-                print("\tGetting page from ", url[:30], '...')
+                print("\tGetting page from ", url[:50], '...')
                 response = self.http.request('GET', url, headers=self.default_header)
                 page_content = response.data.decode(self.decode_format)
                 
