@@ -41,6 +41,7 @@ class ParserTemplate:
     
     # DO NOT TOUCH THIS
     def __init__(self, target_domain, dataset_path, decode_format = 'UTF-8'):
+        self.target_domain = target_domain
         self.http = urllib3.PoolManager()
         self.decode_format = decode_format
         self.default_header = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11',
@@ -56,7 +57,7 @@ class ParserTemplate:
         
         num_of_articles = len(self.dataset)
         
-        for index, count in zip(self.dataset.index, range(num_of_articles)):
+        for index, count in zip(self.dataset.index[:10], range(num_of_articles)):
                 
             print("[Progress at %.4f %%]" % float(count/num_of_articles*100))
             
@@ -77,10 +78,19 @@ class ParserTemplate:
                 
                 time.sleep(random.randint(2, 5))
             except Exception as e:
-                print('\n\n', e, '\n\n')
+                print('\n\n', e, '\n Error at URL: ', url, '\n\n')
+                print("------------------------------------------------------------------")
                 time.sleep(60)
 
         return self.dataset
+    
+    def write_dataset_to_file(self, save_path):
+        cols = self.dataset.columns
+        self.dataset.to_csv(save_path + self.target_domain + '_updated_content.csv', 
+                   sep=';',
+                   na_rep='NULL',
+                   columns=cols,
+                   escapechar="")
 
     def _extract_article_body(self, page_content):
         
