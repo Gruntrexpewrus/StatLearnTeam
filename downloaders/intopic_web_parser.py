@@ -39,7 +39,7 @@ articles_df = pd.DataFrame(data = None, columns = cols)
 
 
 
-for i in (list(range(1, 1000))[::-1]): # From last page to most recent
+for i in (list(range(1, 2685))[::-1]): # From last page to most recent
     
     webpage_path = html_root + str(i) + ".html"
     html_content = open(webpage_path)
