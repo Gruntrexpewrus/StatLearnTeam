@@ -10,8 +10,11 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning) # No SSL cer
 website_url = "https://www.intopic.it/crono/varie/cronaca/?pagina="
 http = urllib3.PoolManager()
 
-for i in range(1, 4000):
+for i in range(604, 1300):
     url = website_url + str(i)
+    
+    
+    
     file_path = "/home/marco/workspace/git/StatLearnTeam/web_pages_index/" + str(i) + ".html"
 
 
@@ -23,14 +26,14 @@ for i in range(1, 4000):
     try:
         response = http.request('GET', url, headers=hdr)
         
-        content = response.data.decode('UTF-8')
+        content = response.data.decode('ISO-8859-1')
         
         f = open(file_path, 'w') # Saving path: files will be like 234.html
         f.write(str(content))
         f.close()
         print('Downloaded %s.html' % str(i))
     
-        wait_time = random.randint(4,  8)#Wait for a period of time from 1 to 4 seconds. 
+        wait_time = random.randint(8,  11)#Wait for a period of time from 1 to 4 seconds. 
         time.sleep(wait_time)
         
     except Exception as e: # In case something happens, wait 
