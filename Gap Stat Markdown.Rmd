@@ -1,0 +1,368 @@
+---
+title: "Gap Statistic"
+author: "Group 01"
+date: "14 maggio 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+library(plotly)
+library(mvtnorm)
+```
+
+# Simulations for the Gap Statistic
+
+We're going to start by defining a function which, given a matrix $X$ containing the points we are interested in clustering, gives a sample from the reference distribution associated to $X$.
+
+```{r cars}
+reference_sample = function(points_matrix, sample_size, method = "svd") {
+    if(method == "svd") {
+        return(reference_SVD_sample(points_matrix, sample_size))
+    } else if(method == "simple") {
+        return(reference_simple_sample(points_matrix, sample_size))
+    } else {
+        stop("Not valid method for reference sampling!")
+    }
+}
+
+reference_simple_sample = function(points_matrix, sample_size) {
+    mins = c()
+    maxs = c()
+    for (column in 1 : ncol(points_matrix)) {
+        mins = c(mins, min(points_matrix[, column]))
+        maxs = c(maxs, max(points_matrix[, column]))
+    }
+    samples = c()
+    for (column in 1 : ncol(points_matrix)) {
+        samples = c(samples, runif(sample_size, min = mins[column], max = maxs[column]))
+    }
+    return(matrix(samples, ncol = ncol(points_matrix), byrow = FALSE))
+}
+
+reference_SVD_sample = function(points_matrix, sample_size) {
+    means = c()
+    for (column in 1 : ncol(points_matrix)) {
+        means = c(means, mean(points_matrix[, column]))
+    }
+    centered_matrix = points_matrix - means
+    V = svd(centered_matrix)$v
+    sample = reference_simple_sample(centered_matrix %*% V, sample_size)
+    sample = sample %*% t(V)
+    return(sample + means)
+}
+```
+
+## Including Plots
+
+We now define a function which, given a set of points, computes the gap statistic for that set under the kmean clustering algorithm.
+
+```{r pressure, echo=FALSE}
+compute_gap_statistic = function(data, k, B, method = "svd", with_se = FALSE) {
+    standard_data = scale(data)
+    clustering = kmeans(data, k, iter.max = 25)
+    log_WK = log(clustering$tot.withinss)
+    rows = nrow(data)
+    if(length(c(B)) == 1) {
+        reference_sample_data = reference_sample(data, B * rows, method)
+        groups = B
+    } else {
+        reference_sample_data = B
+        groups = nrow(reference_sample_data) / rows
+    }
+    log_WKStar = c()
+    for (instance in 1 : groups) {
+        first = 1 + rows * (instance - 1)
+        last = rows * instance
+        clustering = kmeans(reference_sample_data[first : last, ], k, iter.max = 25)
+        log_WKStar = c(log_WKStar, log(clustering$tot.withinss))
+    }
+    if(with_se) {
+        se = sd(log_WKStar) * sqrt(1 + (1 / groups))
+        return(c(mean(log_WKStar) - log_WK, se))
+    }
+    return(mean(log_WKStar) - log_WK)
+}
+```
+
+And then we code a function to find out the best $K$, number of clusters, for a set of points.
+
+```{r pressure, echo=FALSE}
+find_best_k = function(data, B, method = "svd") {
+    gap = -1
+    k = 0
+    reference_sample_data = reference_sample(data, B * nrow(data), method)
+    gap_k_plus = compute_gap_statistic(data, k + 1, reference_sample_data, method)
+    while(gap < 0) {
+        k = k + 1
+        gap_k = gap_k_plus
+        k_plus = compute_gap_statistic(data, k + 1, reference_sample_data, method, TRUE)
+        gap_k_plus = k_plus[1]
+        se_k_plus = k_plus[2]
+        gap = gap_k - gap_k_plus + se_k_plus
+    }
+    return(k)
+}
+```
+
+## Simulations
+
+### Resampling methods
+
+First of all we want to show how the two different resampling methods work. We'll see that the SVD method is better when there's a good amount of correlation in the data, as it can retrievs the variance structure of the distribution.
+
+```{r pressure, echo=FALSE}
+data_figure = function(data, trace_name) {
+    return(plot_ly(x = data[, 1], y = data[, 2], type = "scatter", mode = "markers", name = trace_name))
+}
+
+simulation_data = matrix(rmvnorm(100, c(0, 0), diag(c(1, 1))), nrow = 100, byrow = TRUE)
+simple_sample = reference_sample(simulation_data, 100, method = "simple")
+svd_sample = reference_sample(simulation_data, 100, method = "svd")
+
+simulation_figure = data_figure(simulation_data, "Original Data")
+simple_figure = data_figure(simple_sample, "Simple Resampling")
+svd_sample = data_figure(svd_sample, "SVD Resampling")
+
+figure = subplot(simulation_figure, simple_figure, svd_sample, shareY = TRUE)
+figure = figure %>% layout(title = "Normal Standard Distribution")
+figure
+```
+
+
+
+```{r}
+simulation_data = c()
+for (observation in 1 : 100) {
+    x = rnorm(1, 0, 2)
+    y = rnorm(1, x, 1)
+    simulation_data = c(simulation_data, x, y)
+}
+simulation_data = matrix(simulation_data, nrow = 100, byrow = TRUE)
+simple_sample = reference_sample(simulation_data, 100, method = "simple")
+svd_sample = reference_sample(simulation_data, 100, method = "svd")
+
+simulation_figure = data_figure(simulation_data, "Original Data")
+simple_figure = data_figure(simple_sample, "Simple Resampling")
+svd_sample = data_figure(svd_sample, "SVD Resampling")
+
+figure = subplot(simulation_figure, simple_figure, svd_sample, shareY = TRUE)
+figure = figure %>% layout(title = "High Correlated Data")
+figure
+```
+
+### Example of application of the Gap Statistic
+
+```{r pressure, echo=FALSE}
+simulation_data = c()
+
+for (observations in 1 : 30) {
+    simulation_data = c(simulation_data, rmvnorm(1, c(-1, -1), diag(c(0.5, 0.5))))
+    simulation_data = c(simulation_data, rmvnorm(1, c(3, 1.5), diag(c(1, 2))))
+    simulation_data = c(simulation_data, rmvnorm(1, c(3, 1.5), diag(c(1, 2))))
+}
+simulation_data = matrix(simulation_data, nrow = 90, byrow = TRUE)
+colors = rep(c("red", "green", "green"), 30)
+
+simulation_data_figure = plot_ly(x = simulation_data[, 1], y = simulation_data[, 2], color = colors, type = "scatter", mode = "markers", name = "Data")
+simulation_data_figure = simulation_data_figure %>% layout(plot_bgcolor = 'rgb(236, 236, 243)')
+
+clusters = 1 : 10
+Wk = c()
+for (K in clusters) {
+    clustering = kmeans(simulation_data, K)
+    Wk = c(Wk, clustering$tot.withinss)
+}
+
+Wk_figure = plot_ly(x = clusters, y = Wk, type = "scatter", mode = "lines+markers", name = "Wk", height = 600)
+Wk_figure = Wk_figure %>% layout(yaxis = list(title = "Wk"))
+
+gaps = c()
+sds = c()
+for (K in clusters) {
+    couple = compute_gap_statistic(simulation_data, K, 1000, with_se = TRUE)
+    gaps = c(gaps, couple[1])
+    sds = c(sds, couple[2])
+}
+
+best_k = -1
+for (K in clusters) {
+    if(gaps[K] > gaps[K + 1] - sds[K + 1]) {
+        best_k = K
+        break
+    }
+}
+
+best_k_line = list(type = "line", y0 = 0, y1 = 1, yref = "paper", x0 = best_k, x1 = best_k, line = list(dash = "dot", color = "purple", thickness = 0.5))
+treshold_line = list(type = "line", y0 = gaps[best_k + 1] - sds[best_k + 1], y1 = gaps[best_k + 1] - sds[best_k + 1], x0 = best_k + 1, x1 = best_k + 0.2, line = list(dash = "dot", color = "purple", thickness = 0.5))
+
+bands = list(array = sds, thickness = 1, color = "blue")
+gap_figure = plot_ly(x = clusters, y = gaps, type = "scatter", mode = "lines+markers", name = "Gap(k)", error_y = bands)
+gap_figure = gap_figure %>% layout(shapes = list(best_k_line, treshold_line))
+Wk_figure = Wk_figure %>% layout(shapes = list(best_k_line))
+
+figure = subplot(simulation_data_figure, subplot(Wk_figure, gap_figure, nrows = 2))
+figure
+```
+
+```{r pressure, echo=FALSE}
+simulation_data = c()
+
+for (observations in 1 : 30) {
+    simulation_data = c(simulation_data, rmvnorm(1, c(-1, -1), diag(c(0.5, 0.5))))
+    simulation_data = c(simulation_data, rmvnorm(1, c(3, 1.5), diag(c(1, 2))))
+    simulation_data = c(simulation_data, rmvnorm(1, c(3, 1.5), diag(c(1, 2))))
+}
+simulation_data = matrix(simulation_data, nrow = 90, byrow = TRUE)
+colors = rep(c("red", "green", "green"), 30)
+
+simulation_data_figure = plot_ly(x = simulation_data[, 1], y = simulation_data[, 2], color = colors, type = "scatter", mode = "markers", name = "Data")
+simulation_data_figure = simulation_data_figure %>% layout(plot_bgcolor = 'rgb(236, 236, 243)')
+
+clusters = 1 : 10
+Wk = c()
+for (K in clusters) {
+    clustering = kmeans(simulation_data, K)
+    Wk = c(Wk, clustering$tot.withinss)
+}
+
+Wk_figure = plot_ly(x = clusters, y = Wk, type = "scatter", mode = "lines+markers", name = "Wk", height = 600)
+Wk_figure = Wk_figure %>% layout(yaxis = list(title = "Wk"))
+
+gaps = c()
+sds = c()
+for (K in clusters) {
+    couple = compute_gap_statistic(simulation_data, K, 1000, with_se = TRUE)
+    gaps = c(gaps, couple[1])
+    sds = c(sds, couple[2])
+}
+
+best_k = -1
+for (K in clusters) {
+    if(gaps[K] > gaps[K + 1] - sds[K + 1]) {
+        best_k = K
+        break
+    }
+}
+
+best_k_line = list(type = "line", y0 = 0, y1 = 1, yref = "paper", x0 = best_k, x1 = best_k, line = list(dash = "dot", color = "purple", thickness = 0.5))
+treshold_line = list(type = "line", y0 = gaps[best_k + 1] - sds[best_k + 1], y1 = gaps[best_k + 1] - sds[best_k + 1], x0 = best_k + 1, x1 = best_k + 0.2, line = list(dash = "dot", color = "purple", thickness = 0.5))
+
+bands = list(array = sds, thickness = 1, color = "blue")
+gap_figure = plot_ly(x = clusters, y = gaps, type = "scatter", mode = "lines+markers", name = "Gap(k)", error_y = bands)
+gap_figure = gap_figure %>% layout(shapes = list(best_k_line, treshold_line))
+Wk_figure = Wk_figure %>% layout(shapes = list(best_k_line))
+
+figure = subplot(simulation_data_figure, subplot(Wk_figure, gap_figure, nrows = 2))
+figure
+```
+
+```{r}
+simulation_data = c()
+
+for (observations in 1 : 40) {
+    simulation_data = c(simulation_data, rmvnorm(1, c(-1, -1), diag(c(0.5, 0.5))))
+    simulation_data = c(simulation_data, rmvnorm(1, c(3, 1.5), diag(c(1, 2))))
+    simulation_data = c(simulation_data, rmvnorm(1, c(3, 1.5), diag(c(1, 2))))
+    simulation_data = c(simulation_data, rmvnorm(1, c(-1, 7), diag(c(0.01, 0.02))))
+}
+simulation_data = matrix(simulation_data, nrow = 160, byrow = TRUE)
+colors = rep(c("red", "green", "green", "blue"), 40)
+
+simulation_data_figure = plot_ly(x = simulation_data[, 1], y = simulation_data[, 2], color = colors, type = "scatter", mode = "markers", name = "Data")
+simulation_data_figure = simulation_data_figure %>% layout(plot_bgcolor = 'rgb(236, 236, 243)')
+
+clusters = 1 : 10
+Wk = c()
+for (K in clusters) {
+    clustering = kmeans(simulation_data, K)
+    Wk = c(Wk, clustering$tot.withinss)
+}
+
+Wk_figure = plot_ly(x = clusters, y = Wk, type = "scatter", mode = "lines+markers", name = "Wk", height = 600, line = list(color = "rgb(65, 188, 65)"), marker = list(color = "rgb(65, 188, 65)"))
+Wk_figure = Wk_figure %>% layout(yaxis = list(title = "Wk"))
+
+gaps = c()
+sds = c()
+for (K in clusters) {
+    couple = compute_gap_statistic(simulation_data, K, 1000, with_se = TRUE)
+    gaps = c(gaps, couple[1])
+    sds = c(sds, couple[2])
+}
+
+best_k = -1
+for (K in clusters) {
+    if(gaps[K] > gaps[K + 1] - sds[K + 1]) {
+        best_k = K
+        break
+    }
+}
+
+best_k_line = list(type = "line", y0 = 0, y1 = 1, yref = "paper", x0 = best_k, x1 = best_k, line = list(dash = "dot", color = "purple", thickness = 0.5))
+treshold_line = list(type = "line", y0 = gaps[best_k + 1] - sds[best_k + 1], y1 = gaps[best_k + 1] - sds[best_k + 1], x0 = best_k + 1, x1 = best_k + 0.2, line = list(dash = "dot", color = "purple", thickness = 0.5))
+
+bands = list(array = sds, thickness = 1, color = "blue")
+gap_figure = plot_ly(x = clusters, y = gaps, type = "scatter", mode = "lines+markers", name = "Gap(k)", error_y = bands, line = list(color = "rgb(215, 49, 51)"), marker = list(color = "rgb(215, 49, 51)"))
+gap_figure = gap_figure %>% layout(shapes = list(best_k_line, treshold_line))
+Wk_figure = Wk_figure %>% layout(shapes = list(best_k_line))
+
+figure = subplot(simulation_data_figure, subplot(Wk_figure, gap_figure, nrows = 2))
+figure
+```
+
+```{r}
+simulation_data = c()
+
+for (observations in 1 : 20) {
+    X0 = rnorm(1, -2, 0.3)
+    X1 = rnorm(1, -2, 0.3)
+    X2 = rnorm(1,  0, 0.2)
+    X3 = rnorm(1,  0, 0.2)
+    X4 = rnorm(1,  0, 0.2)
+    X5 = rnorm(1, 1, 0.01)
+    simulation_data = c(simulation_data, X0, X0, X1, X1, X2, X2, X3, X3, X4, X4, X5, X5)
+}
+simulation_data = matrix(simulation_data, nrow = 120, byrow = TRUE)
+colors = rep(c("red", "red", "green", "green", "green", "blue"), 20)
+
+simulation_data_figure = plot_ly(x = simulation_data[, 1], y = simulation_data[, 2], color = colors, type = "scatter", mode = "markers", name = "Data")
+simulation_data_figure = simulation_data_figure %>% layout(plot_bgcolor = 'rgb(236, 236, 243)')
+
+clusters = 1 : 10
+Wk = c()
+for (K in clusters) {
+    clustering = kmeans(simulation_data, K)
+    Wk = c(Wk, clustering$tot.withinss)
+}
+
+Wk_figure = plot_ly(x = clusters, y = Wk, type = "scatter", mode = "lines+markers", name = "Wk", height = 600, line = list(color = "rgb(65, 188, 65)"), marker = list(color = "rgb(65, 188, 65)"))
+Wk_figure = Wk_figure %>% layout(yaxis = list(title = "Wk"))
+
+gaps = c()
+sds = c()
+for (K in clusters) {
+    couple = compute_gap_statistic(simulation_data, K, 1000, with_se = TRUE)
+    gaps = c(gaps, couple[1])
+    sds = c(sds, couple[2])
+}
+
+best_k = -1
+for (K in clusters) {
+    if(gaps[K] > gaps[K + 1] - sds[K + 1]) {
+        best_k = K
+        break
+    }
+}
+
+best_k_line = list(type = "line", y0 = 0, y1 = 1, yref = "paper", x0 = best_k, x1 = best_k, line = list(dash = "dot", color = "purple", thickness = 0.5))
+treshold_line = list(type = "line", y0 = gaps[best_k + 1] - sds[best_k + 1], y1 = gaps[best_k + 1] - sds[best_k + 1], x0 = best_k + 1, x1 = best_k + 0.2, line = list(dash = "dot", color = "purple", thickness = 0.5))
+
+bands = list(array = sds, thickness = 1, color = "blue")
+gap_figure = plot_ly(x = clusters, y = gaps, type = "scatter", mode = "lines+markers", name = "Gap(k)", error_y = bands, line = list(color = "rgb(215, 49, 51)"), marker = list(color = "rgb(215, 49, 51)"))
+gap_figure = gap_figure %>% layout(shapes = list(best_k_line, treshold_line))
+Wk_figure = Wk_figure %>% layout(shapes = list(best_k_line))
+
+figure = subplot(simulation_data_figure, subplot(Wk_figure, gap_figure, nrows = 2))
+figure
+```
