@@ -28,4 +28,6 @@ test_df = dataset.merge(websites, on='author', how='inner')
 test_df = test_df.merge(regions, on = 'website-domain', how = 'inner')
 test_df.drop(test_df.columns[test_df.columns.str.contains('regions',case = False)],axis = 1, inplace = True)
 
-test_df.drop_duplicates(ignore_index = True)
+test_df = test_df.drop_duplicates(subset = 'url', ignore_index = True)
+
+test_df.to_csv('/home/marco/workspace/git/StatLearnTeam/dataset/intopic_it_articles.csv', sep = ';', na_rep = 'NA')
