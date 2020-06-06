@@ -52,7 +52,7 @@ class LaRepubblicaParser:
             except Exception as e:
                 print('\n\n', e, '\n Error at URL: ', url, '\n\n')
                 print("------------------------------------------------------------------")
-                #time.sleep(60)
+                time.sleep(60)
 
         return self.dataset
     
@@ -105,7 +105,7 @@ class LaRepubblicaParser:
         
         updated_content = updated_content.replace('\n', '')
         
-        print(updated_content)
+        #print(updated_content)
         
         
             

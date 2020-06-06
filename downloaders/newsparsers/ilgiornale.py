@@ -87,9 +87,10 @@ class IlGiornaleParser:
             paragraphs.extend(element.findAll('p'))
         
         for par in paragraphs:
-            print(par.getText()) 
+            #print(par.getText()) 
+            updated_content += par.getText()
             
-            
+        #print(updated_content)
             
         '''
         ######################################################################

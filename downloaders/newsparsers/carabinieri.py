@@ -33,7 +33,7 @@ class CarabinieriParser:
     # DO NOT TOUCH THIS
     def get_updated_dataset(self):
         
-        num_of_articles = len(self.dataset[:2])
+        num_of_articles = len(self.dataset)
         
         for index, count in zip(self.dataset.index, range(num_of_articles)):
                 

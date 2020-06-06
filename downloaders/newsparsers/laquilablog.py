@@ -79,7 +79,7 @@ class LAquilaBlogParser:
         for par in body.findAll('p'):
             updated_content += par.getText()
             
-        print(updated_content)
+        #print(updated_content)
          
         '''
         ######################################################################

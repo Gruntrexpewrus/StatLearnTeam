@@ -84,7 +84,7 @@ class LaGazzettaDelloSportParser:
         for par in paragraphs:
             updated_content += par.getText()
         
-        print(updated_content)
+        #print(updated_content)
             
         '''
         ######################################################################

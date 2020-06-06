@@ -78,7 +78,7 @@ class CalabriaPageParser:
         body = soup.find('div', {'class':'post-single-content'})
         
         for par in body.findAll('p'):
-            print(par.getText())
+            #print(par.getText())
             updated_content += par.getText()
         
         

@@ -50,7 +50,7 @@ class FanpageParser:
                 print("\tDone")
                 print("------------------------------------------------------------------")
                     
-                time.sleep(random.randint(2, 5))
+                time.sleep(random.randint(9, 11))
             except Exception as e:
                 print('\n\n', e, '\n Error at URL: ', url, '\n\n')
                 print("------------------------------------------------------------------")
@@ -85,7 +85,7 @@ class FanpageParser:
         for paragraph in article_paragraphs:
             updated_content = updated_content + paragraph.getText() + ' '
         
-        print(updated_content)
+        #print(updated_content)
             
             
             

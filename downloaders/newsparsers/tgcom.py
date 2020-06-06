@@ -81,12 +81,17 @@ class TgCom24Parser:
             paragraphs.extend(element.findAll('p'))
             
         for par in paragraphs:    
-            for s in par.select('script'):
-                s.extract()
+            
+            try:
+                for s in par.select('script'):
+                    s.extract()
+            except:
+                pass
+            
             updated_content += par.getText()
 
             
-        print(updated_content)
+        #print(updated_content)
             
         '''
         ######################################################################

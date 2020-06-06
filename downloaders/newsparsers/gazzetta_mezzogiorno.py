@@ -1,36 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
 
-
-''' ---- GENERAL INFO ---- '''
-This parser will automatically overwrite the content of an article
-in a portion of the dataset that is loaded from the filesystem and then stored in memory. 
-IT WILL NOT OVERWRITE THE LOCAL intopic_it_articles.csv FILE.
-Please do not overwrite your local copy of intopic_it_articles.csv.
-
-
-
-''' ---- FOR YOU ---- '''
-- Use this template to write a specific parser. 
-- Copy everything that follows INCLUDING the imports.
-
-- Write the logic in the _extract_article_body method, 
-the specific section is highlighted.
-
-- Change the name of the class from ParserTemplate to something else that
-  tells us which news outlet it's specific for.
-
-
-
-
-''' --- (IMPORTANT) ---'''
-
-The method get_updated_dataset() will return only a portion of the dataset
-which will contain only the info about one domain name. 
-
-
-"""
 import urllib3
 from bs4 import BeautifulSoup
 import pandas as pd

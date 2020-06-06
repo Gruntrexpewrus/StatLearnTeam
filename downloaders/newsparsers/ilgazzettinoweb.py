@@ -84,7 +84,7 @@ class IlGazzettinoWebParser:
             pass
         
         updated_content += body.getText()
-        print(updated_content) 
+        #print(updated_content) 
         
             
             

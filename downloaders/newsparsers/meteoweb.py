@@ -90,7 +90,7 @@ class MeteowebParser:
             updated_content += par.getText() + ' '
         
         
-        print(updated_content)
+        #print(updated_content)
         
         
             
