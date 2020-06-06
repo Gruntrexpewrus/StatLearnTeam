@@ -74,16 +74,19 @@ class TgCom24Parser:
         ######################################################################
         '''
         
+        body = soup.findAll('div', attrs = {'class':'p'})
         
-        
-        
-        
-        
-        
-        
-        
+        paragraphs = []
+        for element in body:
+            paragraphs.extend(element.findAll('p'))
             
+        for par in paragraphs:    
+            for s in par.select('script'):
+                s.extract()
+            updated_content += par.getText()
+
             
+        print(updated_content)
             
         '''
         ######################################################################
