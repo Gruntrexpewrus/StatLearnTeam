@@ -1,18 +1,16 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Mon May  4 18:19:15 2020
 
-@author: marco
-"""
 import urllib3
 from bs4 import BeautifulSoup
 import pandas as pd
 import random
 import time
 
-class FanpageParser:
-
+class TgCom24Parser:
+    LOW_LIMIT_TIMEOUT = 9
+    HIGH_LIMIT_TIMEOUT = 11
+    
     # DO NOT TOUCH THIS
     def __init__(self, target_domain, dataset_path, decode_format = 'UTF-8'):
         self.target_domain = target_domain
@@ -32,9 +30,9 @@ class FanpageParser:
         num_of_articles = len(self.dataset)
         
         for index, count in zip(self.dataset.index, range(num_of_articles)):
-            
+                
             print("[Progress at %.4f %%]" % float(count/num_of_articles*100))
-
+            
             try:
                 url = self.dataset['url'][index]
                 
@@ -49,8 +47,8 @@ class FanpageParser:
                 self.dataset['content'][index] = updated_article_content
                 print("\tDone")
                 print("------------------------------------------------------------------")
-                    
-                time.sleep(random.randint(2, 5))
+                
+                time.sleep(random.randint(self.LOW_LIMIT_TIMEOUT, self.HIGH_LIMIT_TIMEOUT))
             except Exception as e:
                 print('\n\n', e, '\n Error at URL: ', url, '\n\n')
                 print("------------------------------------------------------------------")
@@ -69,6 +67,7 @@ class FanpageParser:
     def _extract_article_body(self, page_content):
         
         soup = BeautifulSoup(page_content, 'html.parser')
+        updated_content = ""
         '''
         ######################################################################
         ################# WRITE FROM HERE ####################################
@@ -77,24 +76,20 @@ class FanpageParser:
         
         
         
-        updated_content = ''
         
-        body = soup.find("div", {'class':'articleContent'})
-        article_paragraphs = body.findAll('p')
         
-        for paragraph in article_paragraphs:
-            updated_content = updated_content + paragraph.getText() + ' '
         
-        print(updated_content)
+        
+        
+        
             
             
             
         '''
         ######################################################################
-        ################# TO HERE ####################################
+        ################# TO HERE ############################################
         ######################################################################
         '''
         #print(updated_content)
         return updated_content
-
     
