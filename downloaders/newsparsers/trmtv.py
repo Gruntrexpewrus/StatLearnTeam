@@ -7,7 +7,8 @@ import pandas as pd
 import random
 import time
 
-class TeleGranDucatoDiToscanaParser:
+class TrmtvParser:
+    
     LOW_LIMIT_TIMEOUT = 9
     HIGH_LIMIT_TIMEOUT = 11
     
@@ -75,25 +76,15 @@ class TeleGranDucatoDiToscanaParser:
         '''
         
         
-        body = soup.findAll('div', {'class':'post_content'})
         
-        paragraphs = []
-        for element in body:
-            paragraphs.extend(element.findAll('p'))
-            
+        body = soup.find('div', {'id':'entry'})
+        
+        paragraphs = body.findAll('p')
+        
         for par in paragraphs:
-            content = par.getText()
-            
-            if content.startswith('Pubblicit'):
-                pass
-            else:
-                updated_content += par.getText()
-            
+            updated_content += par.getText()
+        
         print(updated_content)
-        
-        
-        
-        
         
             
             
