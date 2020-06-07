@@ -51,5 +51,6 @@ for i in range(195, 955):
         time.sleep(wait_time)
         
     except Exception as e: # In case something happens, wait 
+        i = i - 1
         print(e)
         time.sleep(60)
