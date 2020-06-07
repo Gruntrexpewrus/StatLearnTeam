@@ -19,7 +19,7 @@ def get_random_user_agent_header():
                    'Mozilla/5.0 (Android 10; Mobile; LG-M255; rv:68.0) Gecko/68.0 Firefox/68.0'
                    ]
     
-    user_agent = user_agents[random.randint(0, len(user_agents))]
+    user_agent = user_agents[random.randint(0, len(user_agents)-1)]
     
     hdr = {'User-Agent': user_agent,
            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 
