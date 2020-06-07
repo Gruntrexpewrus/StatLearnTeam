@@ -78,7 +78,7 @@ class IlGazzettinoWebParser:
         body = soup.find('div', {'class':'body-text'})
         
         try:
-            body.span.decompose()
+            body.script.decompose()
             body.aside.decompose()
         except:
             pass

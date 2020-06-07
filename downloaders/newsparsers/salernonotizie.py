@@ -97,6 +97,11 @@ class SalernonotizieParser:
         except:
             pass
                     
+        try:
+            updated_content = updated_content.replace('.Stampa', '')
+        except:
+            pass
+        
         '''
         ######################################################################
         ################# TO HERE ############################################
