@@ -3,6 +3,7 @@
 import urllib3
 import random
 import time
+from pathlib import Path
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning) # No SSL certificate, so ignore https warnings
 
@@ -28,7 +29,7 @@ def get_random_user_agent_header():
     
     return hdr
 
-for i in range(195, 955):
+for i in range(217, 955):
     url = website_url + str(i)
     
     
@@ -45,10 +46,17 @@ for i in range(195, 955):
         f = open(file_path, 'w') # Saving path: files will be like 234.html
         f.write(str(content))
         f.close()
-        print('Downloaded %s.html' % str(i))
+        file_size_kb = int(Path(file_path).stat().st_size / 1024)
+        
+        if file_size_kb < 15:
+            raise Exception
+
+        print('Downloaded %s.html | Size: %d Kb' % (str(i), file_size_kb))
+    
     
         wait_time = random.randint(8,  11) 
         time.sleep(wait_time)
+        
         
     except Exception as e: # In case something happens, wait 
         i = i - 1
