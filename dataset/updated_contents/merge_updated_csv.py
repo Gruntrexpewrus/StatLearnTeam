@@ -35,7 +35,7 @@ dataset = dataset.drop_duplicates(subset = ['content'], keep = 'first')
 dataset = dataset.reset_index(drop = True)
 
 
-authors_region = {' La Gazzetta del Mezzogiorno': 'South',
+authors_italy_zone = {' La Gazzetta del Mezzogiorno': 'South',
  ' Il Giornale': 'North',
  ' ASIpress': 'South',
  ' Il Fatto Quotidiano': 'Centre',
@@ -60,8 +60,8 @@ authors_region = {' La Gazzetta del Mezzogiorno': 'South',
  ' Il Sussidiario': 'North',
  ' Il Secolo XIX': 'North',
  ' Il Crotonese': 'South',
- ' Meteo Web': '',
- ' CalcioWeb': '',
+ ' Meteo Web': 'South',
+ ' CalcioWeb': 'South',
  ' Campanianotizie': 'South',
  " L'Eco del Chisone": 'North',
  ' Vivere Marche': 'Centre',
@@ -92,33 +92,30 @@ authors_actual_region = {' La Gazzetta del Mezzogiorno': 'Puglia',
  ' Il Sussidiario': 'Lombardia',
  ' Il Secolo XIX': 'Liguria',
  ' Il Crotonese': 'Calabria',
- ' Meteo Web': '',
- ' CalcioWeb': '',
+ ' Meteo Web': 'Calabria',
+ ' CalcioWeb': 'Calabria',
  ' Campanianotizie': 'Campania',
  " L'Eco del Chisone": 'Piemonte',
  ' Vivere Marche': 'Marche',
  ' La Stampa': 'Piemonte'}
 
+# New columns to add
+dataset['author_head_office_region'] = None
+dataset['author_italy_zone'] = None
+
+# Assign from dictionaries (keys are the same)
+for author in authors_actual_region.keys():
+    dataset['author_head_office_region'][dataset.author == author] = authors_actual_region[author]
+
+#for author in authors_italy_zone.keys(): # I know this for loop is redundant
+    dataset['author_italy_zone'][dataset.author == author] = authors_italy_zone[author]
 
 
 
-
-
-
+dataset['author'] = dataset['author'].map(lambda x: x.strip())
 
 
 
 dataset.to_csv('/home/marco/workspace/git/StatLearnTeam/dataset/articles.csv' , sep = ';', na_rep = 'NULL')
-
-
-def from_string_to_list(string):
-    string = string.replace('\'', '')    
-    t = string.strip('][\'').split(' ') 
-    t = [c.replace(' ', '').replace('\n', '').replace(',','') for c in t]
-    
-    return t
-
-
-
 
 
