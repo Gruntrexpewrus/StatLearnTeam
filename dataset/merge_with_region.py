@@ -88,7 +88,7 @@ for i in dataset.index:
 cols = ['author', 'regions']
 author_regions = pd.DataFrame(data = None, columns = cols)
 for author in authors.keys():
-    author_regions = author_regions.append(pd.DataFrame([[author, list(authors[author])]], columns = cols, index = [len(author_regions.index)]))
+    author_regions = author_regions.append(pd.DataFrame([[author, str(list(authors[author]))]], columns = cols, index = [len(author_regions.index)]))
     
 dataset = dataset[dataset.region != '[]']
 author_regions = author_regions[author_regions.regions != '[]']

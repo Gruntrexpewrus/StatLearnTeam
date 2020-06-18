@@ -8,7 +8,8 @@ from pathlib import Path
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning) # No SSL certificate, so ignore https warnings
 
 
-website_url = "https://www.intopic.it/crono/varie/cronaca/?pagina="
+#website_url = "https://www.intopic.it/crono/varie/cronaca/?pagina="
+website_url = 'https://www.lanuovasardegna.it/cagliari/cronaca?page='
 http = urllib3.PoolManager()
 
 def get_random_user_agent_header():
@@ -29,36 +30,44 @@ def get_random_user_agent_header():
     
     return hdr
 
-for i in range(217, 955):
-    url = website_url + str(i)
+province = {'cagliari':31 + 1, 'sassari':153 + 1, 'oristano':17 + 1, 'nuoro':121 + 1}
+for provincia in ['nuoro']:
     
     
+    limit_provincia = province[provincia]
     
-    file_path = "/home/marco/workspace/git/StatLearnTeam/web_pages_index/new_pages/" + str(i) + ".html"
-
-    hdr = get_random_user_agent_header()
-
-    try:
-        response = http.request('GET', url, headers=hdr)
+    for i in range(27, limit_provincia):
+        url = website_url + str(i)
         
-        content = response.data.decode('ISO-8859-1')
         
-        f = open(file_path, 'w') # Saving path: files will be like 234.html
-        f.write(str(content))
-        f.close()
-        file_size_kb = int(Path(file_path).stat().st_size / 1024)
-        
-        if file_size_kb < 15:
-            raise Exception
-
-        print('Downloaded %s.html | Size: %d Kb' % (str(i), file_size_kb))
+        #file_path = "/home/marco/workspace/git/StatLearnTeam/web_pages_index/new_pages/" + str(i) + ".html"
     
+        file_path = "/home/marco/workspace/git/StatLearnTeam/web_pages_index/new_pages/nuova_sardegna_" + provincia + '_' + str(i) + ".html"
     
-        wait_time = random.randint(8,  11) 
-        time.sleep(wait_time)
+        hdr = get_random_user_agent_header()
+    
+        try:
+            response = http.request('GET', url, headers=hdr)
+            
+            content = response.data.decode('ISO-8859-1')
+            
+            f = open(file_path, 'w') # Saving path: files will be like 234.html
+            f.write(str(content))
+            f.close()
+            file_size_kb = int(Path(file_path).stat().st_size / 1024)
+            
+            print('Downloaded %s %s.html | Size: %d Kb' % (provincia, str(i), file_size_kb))
+    
+            #if file_size_kb < 15:
+            #    raise Exception('Size error: check if downloader is blocked.')
+    
         
         
-    except Exception as e: # In case something happens, wait 
-        i = i - 1
-        print(e)
-        time.sleep(60)
+            wait_time = random.randint(9,  11) 
+            time.sleep(wait_time)
+            
+            
+        except Exception as e: # In case something happens, wait 
+            i = i - 1
+            print(e)
+            time.sleep(60)

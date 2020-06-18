@@ -20,6 +20,8 @@ for path in csv_paths:
     
     
 # Cleaning data section
+
+dataset['tags'] = dataset['tags'].fillna('[]')
 dataset = dataset.dropna(how = 'any')
 dataset['content'] = dataset['content'].map(lambda x: x.replace('(ASIpress)', ''))
 dataset['content'] = dataset['content'].map(lambda x: x.replace('(Adnkronos)', ''))
@@ -35,7 +37,8 @@ dataset = dataset.drop_duplicates(subset = ['content'], keep = 'first')
 dataset = dataset.reset_index(drop = True)
 
 
-authors_italy_zone = {' La Gazzetta del Mezzogiorno': 'South',
+authors_italy_zone = {
+   ' La Gazzetta del Mezzogiorno': 'South',
  ' Il Giornale': 'North',
  ' ASIpress': 'South',
  ' Il Fatto Quotidiano': 'Centre',
@@ -45,7 +48,7 @@ authors_italy_zone = {' La Gazzetta del Mezzogiorno': 'South',
  ' Il Gazzettino Web': 'North',
  ' La Gazzetta dello Sport': 'North',
  ' Liguria Notizie': 'North',
- ' La Repubblica': 'Lazio',
+ ' La Repubblica': 'Centre',
  ' Fanpage': 'South',
  ' Marche Notizie': 'Centre',
  ' Libero Quotidiano': 'North',
@@ -65,7 +68,19 @@ authors_italy_zone = {' La Gazzetta del Mezzogiorno': 'South',
  ' Campanianotizie': 'South',
  " L'Eco del Chisone": 'North',
  ' Vivere Marche': 'Centre',
- ' La Stampa': 'North'}
+ ' La Stampa': 'North',
+ 'AostaNews': 'North',
+ 'La Nuova Sardegna':'South',
+ 
+ 'UmbriaJournal':'Centre',
+ 'ToscanaNotizie':'Centre',
+ 'Molise Network':'Centre',
+ 'Il Dolomiti':'North',
+ 'Il Friuli':'North',
+ 'BasilicataNews24':'South',
+  'CNA Emilia Romagna':'Centre',
+ }
+
 
 authors_actual_region = {' La Gazzetta del Mezzogiorno': 'Puglia',
  ' Il Giornale': 'Lombardia',
@@ -97,7 +112,22 @@ authors_actual_region = {' La Gazzetta del Mezzogiorno': 'Puglia',
  ' Campanianotizie': 'Campania',
  " L'Eco del Chisone": 'Piemonte',
  ' Vivere Marche': 'Marche',
- ' La Stampa': 'Piemonte'}
+ ' La Stampa': 'Piemonte',
+ 'AostaNews': 'Valle d\' Aosta',
+ 'La Nuova Sardegna':'Sardegna',
+ 'UmbriaJournal':'Umbria',
+ 'ToscanaNotizie':'Toscana',
+ 'Molise Network':'Molise',
+ 'Il Dolomiti':'Trentino',
+ 'Il Friuli':'Friuli',
+ 'BasilicataNews24':'Basilicata',
+  'CNA Emilia Romagna':'Emilia Romagna'}
+
+
+# Cleanup authors
+
+#dataset['author'] = dataset['author'].map(lambda x: x.strip())
+
 
 # New columns to add
 dataset['author_head_office_region'] = None
@@ -112,10 +142,10 @@ for author in authors_actual_region.keys():
 
 
 
-dataset['author'] = dataset['author'].map(lambda x: x.strip())
+#dataset['author'] = dataset['author'].map(lambda x: x.strip())
 
 
 
 dataset.to_csv('/home/marco/workspace/git/StatLearnTeam/dataset/articles.csv' , sep = ';', na_rep = 'NULL')
 
-
+print(dataset.groupby('author_head_office_region').count()['title'])

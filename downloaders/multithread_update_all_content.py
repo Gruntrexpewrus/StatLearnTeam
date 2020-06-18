@@ -56,7 +56,7 @@ class ThreadedParser(threading.Thread):
 
 articles_dataset_path = '/home/marco/workspace/git/StatLearnTeam/dataset/articles_dataset.csv'
 updated_datasets_root_path = '/home/marco/workspace/git/StatLearnTeam/dataset/updated_contents/'
-
+'''
 t1 = ThreadedParser(FanpageParser('www.fanpage.it', articles_dataset_path), updated_datasets_root_path)
 t2 = ThreadedParser(IlFattoQuotidianoParser('www.ilfattoquotidiano.it', articles_dataset_path), updated_datasets_root_path)
 t3 = ThreadedParser(BlitzParser('www.blitzquotidiano.it', articles_dataset_path), updated_datasets_root_path)
@@ -144,3 +144,92 @@ t28 = ThreadedParser(FanpageParser('roma.fanpage.it', articles_dataset_path), up
 t31 = ThreadedParser(LaRepubblicaParser('bologna.repubblica.it', articles_dataset_path), updated_datasets_root_path)
 t28.start()
 t31.start()
+
+
+from newsparsers.campanianotizie import CampaniaNotizieParser
+from newsparsers.viveremarche import VivereMarcheParser
+from newsparsers.corriereadriatico import CorriereAdriaticoParser
+from newsparsers.marchenotizie import MarcheNotizieParser
+from newsparsers.tmnotizie import TMNotizieParser
+from newsparsers.ilmessaggero import IlMessaggeroParser
+from newsparsers.cronacaqui import CronacaQuiParser
+
+
+
+marchenotizie_websites = ['www.pesarourbinonotizie.it',
+ 'www.anconanotizie.it',
+ 'www.ascolinotizie.it',
+ 'www.maceratanotizie.it',
+ 'www.fermonotizie.info']
+
+t32 = ThreadedParser(CampaniaNotizieParser('www.campanianotizie.com', articles_dataset_path), updated_datasets_root_path)
+t33 = ThreadedParser(VivereMarcheParser('www.viveremarche.it', articles_dataset_path), updated_datasets_root_path)
+t34 = ThreadedParser(CorriereAdriaticoParser('www.corriereadriatico.it', articles_dataset_path), updated_datasets_root_path)
+
+t35 = ThreadedParser(MarcheNotizieParser(marchenotizie_websites[0], articles_dataset_path), updated_datasets_root_path)
+t36 = ThreadedParser(MarcheNotizieParser(marchenotizie_websites[1], articles_dataset_path), updated_datasets_root_path)
+t37 = ThreadedParser(MarcheNotizieParser(marchenotizie_websites[2], articles_dataset_path), updated_datasets_root_path)
+t38 = ThreadedParser(MarcheNotizieParser(marchenotizie_websites[3], articles_dataset_path), updated_datasets_root_path)
+t39 = ThreadedParser(MarcheNotizieParser(marchenotizie_websites[4], articles_dataset_path), updated_datasets_root_path)
+
+t40 = ThreadedParser(IlMessaggeroParser('www.ilmessaggero.it', articles_dataset_path), updated_datasets_root_path)
+t41 = ThreadedParser(CronacaQuiParser('www.cronacaqui', articles_dataset_path), updated_datasets_root_path)
+t42 = ThreadedParser(TMNotizieParser('www.tmnotizie', articles_dataset_path), updated_datasets_root_path)
+
+
+t32.start()
+t33.start()
+t34.start()
+t35.start()
+t36.start()
+t37.start()
+t38.start()
+t39.start()
+t40.start()
+t41.start()
+t42.start()
+
+'''
+
+
+from newsparsers.molisenetwork import MoliseNetworkParser
+from newsparsers.toscananews import ToscanaNewsParser
+from newsparsers.basilicatanews24 import BasilicataNews24Parser
+from newsparsers.umbriajournal import UmbriaJournalParser
+from newsparsers.cnaemiliaromagna import CNAEmiliaRomagnaParser
+from newsparsers.ilfriuli import IlFriuliParser
+from newsparsers.ildolomiti import IlDolomitiParser
+
+articles_dataset_path_root = '/home/marco/workspace/git/StatLearnTeam/dataset/'
+
+t43 = ThreadedParser(MoliseNetworkParser('www.molisenetwork.net', dataset_path = articles_dataset_path_root + 'molisenetwork.csv'), updated_datasets_root_path)
+t44 = ThreadedParser(ToscanaNewsParser('www.toscana-notizie.it', dataset_path = articles_dataset_path_root + 'toscananotizie.csv'), updated_datasets_root_path)
+t45 = ThreadedParser(BasilicataNews24Parser('www.basilicata24.it', dataset_path = articles_dataset_path_root + 'basilicatanews24.csv'), updated_datasets_root_path)
+t46 = ThreadedParser(UmbriaJournalParser('www.umbriajournal.com', dataset_path = articles_dataset_path_root + 'umbriajournal.csv'), updated_datasets_root_path)
+t47 = ThreadedParser(CNAEmiliaRomagnaParser('www.cnaemiliaromagna.it', dataset_path = articles_dataset_path_root + 'cnaemiliaromagna.csv'), updated_datasets_root_path)
+t48 = ThreadedParser(IlFriuliParser('www.ilfriuli.it', dataset_path = articles_dataset_path_root + 'ilfriuli.csv'), updated_datasets_root_path)
+t49 = ThreadedParser(IlDolomitiParser('www.ildolomiti.it', dataset_path = articles_dataset_path_root + 'ildolomiti.csv'), updated_datasets_root_path)
+
+t43.start()
+t44.start()
+t45.start()
+t46.start()
+t47.start()
+t48.start()
+t49.start()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

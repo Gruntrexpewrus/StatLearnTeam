@@ -35,4 +35,3 @@ for author in dataset.author:
         
 #domain_dataset.to_csv(dataset_root + 'author_websites.csv', sep = ';', na_rep = 'NA')
 
-regions = pd.read_csv(dataset_root + 'quotidiani.csv', sep = ';')

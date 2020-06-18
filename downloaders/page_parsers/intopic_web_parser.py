@@ -15,7 +15,7 @@ from urllib.parse import urlparse
 
 def extract_date(filename, raw_string):
     raw_string = str(raw_string)
-    months = {'Gennaio':'01', 'Febbraio':'02', 'Marzo':'03', 'Aprile':'04', 'Maggio':'05'}
+    months = {'Gennaio':'01', 'Febbraio':'02', 'Marzo':'03', 'Aprile':'04', 'Maggio':'05', 'Giugno':'05'}
 
     if "2020" in raw_string:
         creation_date = raw_string.split(' ')
@@ -34,12 +34,14 @@ def extract_date(filename, raw_string):
     
 html_root = "/home/marco/workspace/git/StatLearnTeam/web_pages_index/" # Where the html pages are
 
-cols = ['title', 'content', 'date', 'author', 'tags', 'url', 'website-domain']
+cols = ['title', 'content', 'date', 'author', 'tags', 'url', 'website-domain', 'region']
+
 articles_df = pd.DataFrame(data = None, columns = cols)
 
+quotidiani = pd.read_csv('/home/marco/workspace/git/StatLearnTeam/dataset/quotidiani.csv', sep = ',')
 
 
-for i in (list(range(1, 2685))[::-1]): # From last page to most recent
+for i in (list(range(1, 3455))[::-1]): # From last page to most recent
     
     webpage_path = html_root + str(i) + ".html"
     html_content = open(webpage_path)
@@ -48,6 +50,9 @@ for i in (list(range(1, 2685))[::-1]): # From last page to most recent
     ################# SINGLE PAGE MINING STARTS HERE #############################
     
     article_section = soup.findAll('div', attrs={"class":"bp-entry"})
+    
+    print('Page ', i, ' out of 3455')
+    
     for article in article_section:
         try:
             title = article.find("h2").find("a").getText()
@@ -70,7 +75,10 @@ for i in (list(range(1, 2685))[::-1]): # From last page to most recent
             except:
                 pass # Not an article, OR the article does not have any tags
             
-            article_entry = pd.DataFrame(data = [[title, content, date, author, tags, url, website]], columns = cols)
+            
+            regions = quotidiani['Region'][quotidiani.Domain == website].unique()
+            
+            article_entry = pd.DataFrame(data = [[title, content, date, author, tags, url, website, regions]], columns = cols)
             articles_df = articles_df.append(article_entry, ignore_index = True)
 
         except Exception as e:
@@ -83,6 +91,8 @@ for i in (list(range(1, 2685))[::-1]): # From last page to most recent
 
 
 # Saving dataframe to file
+articles_df.drop_duplicates(subset=["content"])
+
 articles_df.to_csv('/home/marco/workspace/git/StatLearnTeam/dataset/intopic_it_articles.csv', 
                    sep=';',
                    na_rep='NULL',
