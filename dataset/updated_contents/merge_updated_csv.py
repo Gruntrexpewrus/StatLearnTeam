@@ -79,6 +79,7 @@ authors_italy_zone = {
  'Il Friuli':'North',
  'BasilicataNews24':'South',
   'CNA Emilia Romagna':'Centre',
+  'Abruzzonews':'Centre'
  }
 
 
@@ -121,7 +122,8 @@ authors_actual_region = {' La Gazzetta del Mezzogiorno': 'Puglia',
  'Il Dolomiti':'Trentino',
  'Il Friuli':'Friuli',
  'BasilicataNews24':'Basilicata',
-  'CNA Emilia Romagna':'Emilia Romagna'}
+  'CNA Emilia Romagna':'Emilia Romagna',
+  'Abruzzonews':'Abruzzo'}
 
 
 # Cleanup authors
@@ -136,6 +138,7 @@ dataset['author_italy_zone'] = None
 # Assign from dictionaries (keys are the same)
 for author in authors_actual_region.keys():
     dataset['author_head_office_region'][dataset.author == author] = authors_actual_region[author]
+    print('Number of articles for author ', author, ': ', len(dataset[dataset.author == author].index))
 
 #for author in authors_italy_zone.keys(): # I know this for loop is redundant
     dataset['author_italy_zone'][dataset.author == author] = authors_italy_zone[author]
@@ -148,4 +151,4 @@ for author in authors_actual_region.keys():
 
 dataset.to_csv('/home/marco/workspace/git/StatLearnTeam/dataset/articles.csv' , sep = ';', na_rep = 'NULL')
 
-print(dataset.groupby('author_head_office_region').count()['title'])
+print(dataset.groupby('author_italy_zone').count()['title'])

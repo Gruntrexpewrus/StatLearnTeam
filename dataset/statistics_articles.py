@@ -11,9 +11,9 @@ import pandas as pd
 from collections import OrderedDict
 
 dataset_root = '/home/marco/workspace/git/StatLearnTeam/dataset/'
-dataset = pd.read_csv('/home/marco/workspace/git/StatLearnTeam/dataset/intopic_it_articles.csv', sep = ';')
-
-
+dataset = pd.read_csv(dataset_root + 'articles.csv', sep = ';', index_col = [0])
+test = dataset.dropna()
+'''
 info = dataset.groupby(['author']).size()
 count_articles = []
 for index in info.index:
@@ -35,3 +35,4 @@ for author in dataset.author:
         
 #domain_dataset.to_csv(dataset_root + 'author_websites.csv', sep = ';', na_rep = 'NA')
 
+'''

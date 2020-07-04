@@ -93,8 +93,8 @@ for author in authors.keys():
 dataset = dataset[dataset.region != '[]']
 author_regions = author_regions[author_regions.regions != '[]']
 
-dataset.to_csv('/home/marco/workspace/git/StatLearnTeam/dataset/articles_dataset.csv', sep = ';', na_rep = 'NA')         
-author_regions.to_csv('/home/marco/workspace/git/StatLearnTeam/dataset/author_regions.csv', sep = ';', na_rep = 'NA') 
+#dataset.to_csv('/home/marco/workspace/git/StatLearnTeam/dataset/articles_dataset.csv', sep = ';', na_rep = 'NA')         
+#author_regions.to_csv('/home/marco/workspace/git/StatLearnTeam/dataset/author_regions.csv', sep = ';', na_rep = 'NA') 
             
             
             
