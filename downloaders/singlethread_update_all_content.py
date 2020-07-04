@@ -47,7 +47,6 @@ from newsparsers.ilmessaggero import IlMessaggeroParser
 from newsparsers.cronacaqui import CronacaQuiParser
 from newsparsers.nuovasardegna import LaNuovaSardegnaParser
 from newsparsers.aostanews import AostaNewsParser
-
 from newsparsers.molisenetwork import MoliseNetworkParser
 from newsparsers.toscananews import ToscanaNewsParser
 from newsparsers.basilicatanews24 import BasilicataNews24Parser
@@ -55,6 +54,7 @@ from newsparsers.umbriajournal import UmbriaJournalParser
 from newsparsers.cnaemiliaromagna import CNAEmiliaRomagnaParser
 from newsparsers.ilfriuli import IlFriuliParser
 from newsparsers.ildolomiti import IlDolomitiParser
+from newsparsers.abruzzonews import AbruzzoNewsParser
 
 #articles_dataset_path = '/home/marco/workspace/git/StatLearnTeam/dataset/articles_dataset.csv'
 #articles_dataset_path = '/home/marco/workspace/git/StatLearnTeam/dataset/nuova_sardegna.csv'
@@ -71,9 +71,12 @@ updated_datasets_root_path = '/home/marco/workspace/git/StatLearnTeam/dataset/up
 
 
 #p = CNAEmiliaRomagnaParser('www.cnaemiliaromagna.it', dataset_path = articles_dataset_path_root + 'cnaemiliaromagna.csv')
-p = IlFriuliParser('www.ilfriuli.it', dataset_path = articles_dataset_path_root + 'ilfriuli.csv')
+#p = IlFriuliParser('www.ilfriuli.it', dataset_path = articles_dataset_path_root + 'ilfriuli.csv')
 #p = IlDolomitiParser('www.ildolomiti.it', dataset_path = articles_dataset_path_root + 'ildolomiti.csv')
 
+
+#p = AbruzzoNewsParser('www.abruzzonews.eu', dataset_path = articles_dataset_path_root + 'abruzzonews.csv')
+p = LaNuovaSardegnaParser('www.lanuovasardegna.it', dataset_path = articles_dataset_path_root + 'lanuovasardegna.csv')
 p.get_updated_dataset()
 p.write_dataset_to_file(updated_datasets_root_path)
 
