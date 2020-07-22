@@ -37,7 +37,7 @@ cols = ['title', 'content', 'date', 'author', 'tags', 'url', 'website-domain', '
 
 articles_df = pd.DataFrame(data = None, columns = cols)
 
-html_paths = glob.glob("/home/marco/workspace/git/StatLearnTeam/web_pages_index/new_pages/molise*.html")
+html_paths = glob.glob("/home/marco/workspace/git/StatLearnTeam/old/web_pages_index/new_pages/molise*.html")
 for path in html_paths: # From last page to most recent
     
     webpage_path = path
@@ -54,7 +54,7 @@ for path in html_paths: # From last page to most recent
             title = article.find('h2', {'class':'post-title'}).getText()
             content =  ''#
             
-            date =  ''
+            date =  article.find('time', {'class':'postmeta-date'})['datetime']
             
             author = 'Molise Network'
             
@@ -81,15 +81,15 @@ for path in html_paths: # From last page to most recent
 
 
 # Saving dataframe to file
-articles_df.drop_duplicates(subset=["content"])
-
+#articles_df.drop_duplicates(subset=["content"])
+'''
 articles_df.to_csv('/home/marco/workspace/git/StatLearnTeam/dataset/molisenetwork.csv', 
                    sep=';',
                    na_rep='NULL',
                    columns=cols,
                    escapechar="")
 
-
+'''
 '''
 ## SIMPLE CONTENT FILTER - WILL LOOK FOR COVID RELATED KEYWORDSs       
         
