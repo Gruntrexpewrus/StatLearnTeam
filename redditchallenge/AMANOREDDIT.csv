@@ -647,17 +647,17 @@ Aggiungo un paio di link:
 Avrei una domanda da porvi perché non ho capito delle cose.
 Conosco una persona che tra due settimane torna dal Giappone e nel tornare farà scalo a Shanghai dove resterà una notte.
 Cosa dovrà fare? Quarantena? Come funziona?",1.0,neutral
-207,"Scusate, per un secondo su Repubblica era apparso il titolo ""Prefettura di Milano ordina uffici chiusi da lunedì"". Qualcuno mi darebbe delucidazioni?",,a
-208,Confermato malato di Sesto San Giovanni al San Raffaele ricoverato da 1 settimana,,a
-209,Lezioni sospese per una settimana pure ad UniBS,,a
-210,"Sto aspettando notizie dall'università di Bologna dato che questa settimana ci dovrebbero essere pure le giornate di orientamento, e dubito abbiano luogo. Dato che Ferrara ha già sospeso le lezioni sarebbe carino sapere se è lo stesso qui, spero di sapere qualcosa per pranzo",,a
-211,"ragazzi vivo nella zona rossa , ho acquistato venerdì un po di maschere tramite ebay ed amazon ( dite che verranno bloccate all'entrata della zona rossa) ?",,a
+207,"Scusate, per un secondo su Repubblica era apparso il titolo ""Prefettura di Milano ordina uffici chiusi da lunedì"". Qualcuno mi darebbe delucidazioni?",1.0,neutral
+208,Confermato malato di Sesto San Giovanni al San Raffaele ricoverato da 1 settimana,1.0,neutral
+209,Lezioni sospese per una settimana pure ad UniBS,1.0,negative
+210,"Sto aspettando notizie dall'università di Bologna dato che questa settimana ci dovrebbero essere pure le giornate di orientamento, e dubito abbiano luogo. Dato che Ferrara ha già sospeso le lezioni sarebbe carino sapere se è lo stesso qui, spero di sapere qualcosa per pranzo",1.0,neutral
+211,"ragazzi vivo nella zona rossa , ho acquistato venerdì un po di maschere tramite ebay ed amazon ( dite che verranno bloccate all'entrata della zona rossa) ?",1.0,neutral
 212,"Non so se i dati sono giusti, [ma sembra interessante](https://www.reddit.com/r/educationalgifs/comments/f86b7j/coronavirus_outbreak_compared_to_other_disease/)
 
-EDIT: E' un estratto da [questo video](https://www.youtube.com/watch?v=6dDD2tHWWnU&feature=youtu.be)",,a
-213,[deleted],,a
-214,[deleted],,a
-215,Secondo voi come apre la borsa domani? Di recente avevo acquistato delle azioni e sono un po' preoccupato che domani mattina ci sará il finimondo. Dovrei dar via tutto?,,a
+EDIT: E' un estratto da [questo video](https://www.youtube.com/watch?v=6dDD2tHWWnU&feature=youtu.be)",1.0,neutral
+213,[deleted],1.0,neutral
+214,[deleted],1.0,neutral
+215,Secondo voi come apre la borsa domani? Di recente avevo acquistato delle azioni e sono un po' preoccupato che domani mattina ci sará il finimondo. Dovrei dar via tutto?,1.0,negative
 216,"[http://www.umbria24.it/attualita/coronavirus-anche-lumbria-collegata-a-sala-operativa-protezione-civile-con-conte](http://www.umbria24.it/attualita/coronavirus-anche-lumbria-collegata-a-sala-operativa-protezione-civile-con-conte)
 
 Caso sospetto in Umbria.
@@ -666,15 +666,15 @@ Speriamo sia un ternano.
 
 /s
 
-Immancabile l'intervista al cardinal Bassetti, luminare dell'argomento.",,a
+Immancabile l'intervista al cardinal Bassetti, luminare dell'argomento.",1.0,neutral
 217,"Io sono davvero basito, mi son trasferito un mese fa in Spagna per lavoro, stanotte avrei l'aereo per Treviso e martedì avevo la difesa della tesi di laurea magistrale a padova, per poi ritornare in Spagna giovedì.
 Il rettore ha dato indicazioni di rinvio esami (per le lauree non è chiaro)
 Zaia vorrebbe chiudere tutti gli atenei a tempo indeterminato. 
 
 
-Voglio spararmi",,a
-218,Godetevi la [prima pagina](https://i.imgur.com/o6lGZ3P.jpg) aberrante di Libero,,a
-219,"Quando dico che l'Italia è un paese strano mi sento un po' un qualunquista perché in fondo ogni paese è strano a modo suo. Poi ci sono situazioni come queste che mi fanno riflettere. In Gran Bretagna dove vivo ci sono stati casi ben prima dell'Italia. E' stato deciso di non riportare dove questi casi fossero avvenuti e sono state rilasciate informazioni riguardo il patient zero solo dopo che lo stesso fosse guarito. In generale quando vado a leggere le notizie sulla BBC mi sento tranquillizzato. In Italia c'è l'approccio completamente opposto. Vengono diffuse notizie su tutti i contagiati, gli spostamenti, si rimandano eventi sportivi, si chiudono lo scuole. A me pare evidente che l'Italia abbia applicato misure più restrittive di altri Paesi (e questo è forse un merito) ma il risultato è un eccesso di zelo che crea psicosi e disagi a vaste aree della popolazione. Ma avere una risposta così spropositata (a torto o a ragione) rispetto al resto del mondo per una crisi globale che senso ha? Gli standard sanitari ed igienici in Italia sono tra i migliori al mondo. Il numero dei contagiati sarà in linea a quello del resto d'europa. Perché tutta questa paura? A chi giova?",,a
+Voglio spararmi",1.0,negative
+218,Godetevi la [prima pagina](https://i.imgur.com/o6lGZ3P.jpg) aberrante di Libero,1.0,positive
+219,"Quando dico che l'Italia è un paese strano mi sento un po' un qualunquista perché in fondo ogni paese è strano a modo suo. Poi ci sono situazioni come queste che mi fanno riflettere. In Gran Bretagna dove vivo ci sono stati casi ben prima dell'Italia. E' stato deciso di non riportare dove questi casi fossero avvenuti e sono state rilasciate informazioni riguardo il patient zero solo dopo che lo stesso fosse guarito. In generale quando vado a leggere le notizie sulla BBC mi sento tranquillizzato. In Italia c'è l'approccio completamente opposto. Vengono diffuse notizie su tutti i contagiati, gli spostamenti, si rimandano eventi sportivi, si chiudono lo scuole. A me pare evidente che l'Italia abbia applicato misure più restrittive di altri Paesi (e questo è forse un merito) ma il risultato è un eccesso di zelo che crea psicosi e disagi a vaste aree della popolazione. Ma avere una risposta così spropositata (a torto o a ragione) rispetto al resto del mondo per una crisi globale che senso ha? Gli standard sanitari ed igienici in Italia sono tra i migliori al mondo. Il numero dei contagiati sarà in linea a quello del resto d'europa. Perché tutta questa paura? A chi giova?",1.0,negative
 220,"Questo quanto informano i comuni del lodigiano :
  
 - per i residenti dei 10 Comuni oggetto dell’ordinanza emanata del Ministero della Salute, attenersi rigorosamente alle disposizioni contenute nella stessa;
@@ -689,46 +689,46 @@ Per qualsiasi ulteriore richiesta di informazioni sono stati attivati i seguenti
  
 Ministero della Salute 1500
 
-Regione Lombardia 800 89 45 45",,a
+Regione Lombardia 800 89 45 45",1.0,neutral
 221,"Se non rimandano la fiera a Firenze della prossima settimana mi incazzissimo.
 Edit per chiarire una cosa: bloccare eventi non necessari come fiere e sport anche in zone senza focolai è semplicemente buon senso.
-Aspettare di avere contagiati e poi isolare non ha senso.",,a
-222,Ma come cristo hanno tenuto un paziente ricoverato per 7 giorni senza diagnosticarlo?,,a
-223,[Pensiamo positivo](https://www.agi.it/salute/news/2020-02-18/coronavirus-virologo-letalit-7120484/),,a
-224,"Non ho capito cosa vogliono fare per quanto riguarda le gite nelle scuole. Supponiamo che una classe questo aprile abbia in programma di andare all'estero qualche giorno, che succede?",,a
+Aspettare di avere contagiati e poi isolare non ha senso.",1.0,negative
+222,Ma come cristo hanno tenuto un paziente ricoverato per 7 giorni senza diagnosticarlo?,1.0,negative
+223,[Pensiamo positivo](https://www.agi.it/salute/news/2020-02-18/coronavirus-virologo-letalit-7120484/),1.0,positive
+224,"Non ho capito cosa vogliono fare per quanto riguarda le gite nelle scuole. Supponiamo che una classe questo aprile abbia in programma di andare all'estero qualche giorno, che succede?",1.0,negative
 225,"Sul suo profilo Facebook, Lucia Azzalina (ministro della scuola) ha detto che ha bloccato tutti i viaggi d'istruzione.
 Non è consentito alla scuola se scegliete di sospendere o no una gita, le ha sospese a priori.
-(rip partivo per Praga martedì)",,a
-226,C'è stato un caso nel mio comune e quindi salta il pranzo di famiglia!,,a
-227,Vedo un sacco di gente che afferma che il numero di casi in Italia è più alto rispetto agli altri paesi europei perché vengono fatti più test. Fonte?,,a
+(rip partivo per Praga martedì)",1.0,negative
+226,C'è stato un caso nel mio comune e quindi salta il pranzo di famiglia!,1.0,positive
+227,Vedo un sacco di gente che afferma che il numero di casi in Italia è più alto rispetto agli altri paesi europei perché vengono fatti più test. Fonte?,1.0,neutral
 228,"Mi domando...
 Può mai essere che solo in Italia ci siano tutti questi casi?
-In Germania, in Francia... hanno veramente bloccato tutto?",,a
-229,"Comunque veramente non so quanti casi a sto punto ci siano negli altri paesi, io vivo in Germania e ho la febbre da ieri anche se solo 37.5 ho chiamato il numero e la tipa sembrava pure seccata. Sono andato a farmi vedere e quando ho detto che ero preoccupato per il coronavirus e che non volevo uscire mi hanno praticamente riso in faccia. Ok non allarmare però uno ci prova e poi queste sono le relazioni..",,a
+In Germania, in Francia... hanno veramente bloccato tutto?",1.0,neutral
+229,"Comunque veramente non so quanti casi a sto punto ci siano negli altri paesi, io vivo in Germania e ho la febbre da ieri anche se solo 37.5 ho chiamato il numero e la tipa sembrava pure seccata. Sono andato a farmi vedere e quando ho detto che ero preoccupato per il coronavirus e che non volevo uscire mi hanno praticamente riso in faccia. Ok non allarmare però uno ci prova e poi queste sono le relazioni..",1.0,negative
 230,"Ma quindi il decreto Coronavirus è legge? Come funziona?
 
-Bello come Salvini fa i raduni di Sansepolcro dei poveri e le Marce sul Papeete da 6 mesi, e Chad Conte ottiene *i pieni poteri* per un paio di polmoniti e nessuno oserà dirgli un cazzo.",,a
-231,Ma in tutto questo l'EU ha detto qualcosa?,,a
+Bello come Salvini fa i raduni di Sansepolcro dei poveri e le Marce sul Papeete da 6 mesi, e Chad Conte ottiene *i pieni poteri* per un paio di polmoniti e nessuno oserà dirgli un cazzo.",1.0,negative
+231,Ma in tutto questo l'EU ha detto qualcosa?,1.0,negative
 232,"Comunque a detta di Conte siamo pieni di casi ( e con un'epidemia in corso ) perchè abbiamo una sanità migliore e stiamo facendo più test. 
 
 🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔
 
-Cioè praticamente ciò implicherebbe che tutta europa ormai è fottuta, soprattutto dove non stanno facendo screening",,a
-233,Siiiii da lunedì smartworking!,,a
+Cioè praticamente ciò implicherebbe che tutta europa ormai è fottuta, soprattutto dove non stanno facendo screening",1.0,negative
+233,Siiiii da lunedì smartworking!,1.0,positive
 234,"Il ministero della salute, continua a fare spot ~~del cazzo~~ che ""invecchiano male"" ( [Spot TV sul coronavirus con Michele Mirabella](https://www.youtube.com/watch?v=0356dNANu6s&list=PL554BF950C2466B1B), non in elenco e coi commenti disattivati, probabilmente per evitare la ormai facile ironia sul ""***ma non è affatto facile il contagio***™""  o sul ""***parlatene col vostro medico***"") o per promuovere l'igiene delle mani ( [Nuovo Coronavirus, i consigli di Michele Mirabella sull’igiene delle mani](https://www.youtube.com/watch?v=fdmDdwzpDeQ) ), mostrando un bagno vuoto con asciugamano *teoricamente* monouso, dimenticando che nei luoghi pubblici spesso i bagni son sporchi, affollati, e con asciugamani elettrici, da anni accusati di spargere germi come se non ci fosse un domani.
 
-Forse dovrebbero concentrarsi più sul pubblicizzare il numero unico 1500, dato che la stragrande maggioranza delle persone che conosco non è a conoscenza del numero, e **continuano a spuntare articoli di persone che sospettano di avere il virus e si recano al pronto soccorso**.",,a
-235,"già 55 infetti, con questo andazzo saranno migliaia tra qualche settimana",,a
+Forse dovrebbero concentrarsi più sul pubblicizzare il numero unico 1500, dato che la stragrande maggioranza delle persone che conosco non è a conoscenza del numero, e **continuano a spuntare articoli di persone che sospettano di avere il virus e si recano al pronto soccorso**.",1.0,negative
+235,"già 55 infetti, con questo andazzo saranno migliaia tra qualche settimana",1.0,negative
 236,"Comunque [sto leggendo](https://www.regione.piemonte.it/web/pinforma/notizie/coronavirus-situazione-piemonte) che è arrivato anche a Torino, il signore è stato a contatto con il ceppo lombardo.
 
-A due fermate da casa mia con la linea che uso per andare all’uni... bene.",,a
+A due fermate da casa mia con la linea che uso per andare all’uni... bene.",1.0,negative
 237,"Raga aiuto, se l'uno scrive 
 
 “Nei giorni da lunedì 24 febbraio a sabato 29 febbraio, saranno sospese le attività didattiche (lezioni, tirocini, esami e lauree)""
 
-Significa che la segreteria rimane aperta? Io dovrei immatricolarmi...",,a
-238,"Stanotte la mia ragazza deve partire in autobus per tornare a casa, sono circa 7 ore di viaggio da Venezia per tutta l' Austria, che dite, la rischiamo? 🤔",,a
-239,Scusate ma hanno chiuso Milano?,,a
+Significa che la segreteria rimane aperta? Io dovrei immatricolarmi...",1.0,neutral
+238,"Stanotte la mia ragazza deve partire in autobus per tornare a casa, sono circa 7 ore di viaggio da Venezia per tutta l' Austria, che dite, la rischiamo? 🤔",1.0,neutral
+239,Scusate ma hanno chiuso Milano?,1.0,neutral
 240,"Salvo che non ci siano altri thread pinnati (oltre al caffè), a [questo link](https://www.reddit.com/r/italy/about/sticky?num=2) troverete sempre il più recente megathread.
 
 Edit: questo link potrebbe non funzionare dall’app ufficiale.
@@ -745,66 +745,66 @@ Inoltre, per limitare i report e per non frammentare la discussione, abbiamo tem
 
 > Il megathread vigente sarà generalmente stickato in cima al sub (raggiungibile a [questo link](https://www.reddit.com/r/italy/about/sticky?num=2)), oppure sarà linkato nel testo del Caffè.
 
-S'invita all'uso del nuovo report ""Coronavirus (Regola Temporanea)"".",,a
-241,Caso positivo Piemonte.,,a
+S'invita all'uso del nuovo report ""Coronavirus (Regola Temporanea)"".",1.0,neutral
+241,Caso positivo Piemonte.,1.0,negative
 242,"Aggiungo il sito [https://livenewsmap.it](https://livenewsmap.it/) e le ultime notizie:
 
  [**Primo malato a Torino, un uomo di 40 anni che ha avuto contatti con i casi in Lombardia**](https://livenewsmap.it/?job_listing=primo-malato-a-torino-un-uomo-di-40-anni-che-ha-avuto-contatti-con-i-casi-in-lombardia) 
 
  [**Caso sospetto nel Napoletano**](https://livenewsmap.it/?job_listing=caso-sospetto-nel-napoletano) 
 
- [**Agrigento, un caso sospetto, attesa per esito test**](https://livenewsmap.it/?job_listing=agrigento-un-caso-sospetto-attesa-per-esito-test)",,a
+ [**Agrigento, un caso sospetto, attesa per esito test**](https://livenewsmap.it/?job_listing=agrigento-un-caso-sospetto-attesa-per-esito-test)",1.0,neutral
 243,"metterei pure questo link con le varie casistiche.
 
-https://www.worldometers.info/coronavirus/coronavirus-age-sex-demographics/",,a
+https://www.worldometers.info/coronavirus/coronavirus-age-sex-demographics/",1.0,neutral
 244,"Ennesima domanda impanicata :
 
 I miei sono un po’ in panico. Io dovrei immatricolarmi a Milano in una magistrale, e soprattutto trovare casa.
 
-Mi conviene seriamente aspettare e vedere come si evolve nei prossimi giorni la situazione ?",,a
-245,"Scusate l'ignoranza, ma cosa succede se attraversi la fase della febbre e tosse generale? Cosa vuol dire essere pazienti O?",,a
-246,"Un collega oggi mi stava dicendo che c'era un caso anche ad Ostia, si sa niente? Falso allarme?",,a
-247,Qualcuno è a conoscenza se esiste un test per il coronavirus?,,a
+Mi conviene seriamente aspettare e vedere come si evolve nei prossimi giorni la situazione ?",1.0,negative
+245,"Scusate l'ignoranza, ma cosa succede se attraversi la fase della febbre e tosse generale? Cosa vuol dire essere pazienti O?",1.0,neutral
+246,"Un collega oggi mi stava dicendo che c'era un caso anche ad Ostia, si sa niente? Falso allarme?",1.0,neutral
+247,Qualcuno è a conoscenza se esiste un test per il coronavirus?,1.0,neutral
 248,"Domani al lavoro sarà un deserto visto che mancheranno tutti quelli che abitano nelle zone rosse (che costituiscono l'80% del personale)
 
-(Lavoro in uno dei comuni vicini)",,a
-249,2030 degli Articolo 31 ne ha azzeccata un'altra. Mi aspetto l'ingresso di Ambra Angiolini in Parlamento fra pochi anni.,,a
-250,[deleted],,a
-251,"Mi raccomando, per non intasare le linee del 112, se pensate di avere il virus, mandate una biopsia su virustotal, risultati rapidi e molto affidabili",,a
-252,"Io però non capisco una cosa, da quello che sta succedendo sembra che il virus sia in giro già da un po’ allora mi chiedo, senza polemica, ma l’Italia poteva fare di più? Non mi sembra cha abbiamo preso meno precauzioni degli altri paesi europei, anzi, siamo stati gli unici a bloccare i voli diretti. Pertanto mi chiedo se è solo questione di tempo per nuovi casi in tutta Europa o sono io che mi perdo qualche passaggio per il fatto che sono tutti in Italia.",,a
-253,[deleted],,a
+(Lavoro in uno dei comuni vicini)",1.0,negative
+249,2030 degli Articolo 31 ne ha azzeccata un'altra. Mi aspetto l'ingresso di Ambra Angiolini in Parlamento fra pochi anni.,1.0,positive
+250,[deleted],1.0,neutral
+251,"Mi raccomando, per non intasare le linee del 112, se pensate di avere il virus, mandate una biopsia su virustotal, risultati rapidi e molto affidabili",1.0,positive
+252,"Io però non capisco una cosa, da quello che sta succedendo sembra che il virus sia in giro già da un po’ allora mi chiedo, senza polemica, ma l’Italia poteva fare di più? Non mi sembra cha abbiamo preso meno precauzioni degli altri paesi europei, anzi, siamo stati gli unici a bloccare i voli diretti. Pertanto mi chiedo se è solo questione di tempo per nuovi casi in tutta Europa o sono io che mi perdo qualche passaggio per il fatto che sono tutti in Italia.",1.0,negative
+253,[deleted],1.0,neutral
 254,"[Ragazza torna da Padova](https://www.ilgazzettino.it/nordest/padova/coronavirus_tosse_febbre_ragazza_tornata_padova_in_isolamento-5068444.html)  
 
 
-Padova = Cina",,a
-255,Ecco mi sono svegliata tardi e adesso non riesco a trovare le mascherine da nessuna parte. Boh pazienza morirò,,a
-256,"Domanda: e il referendum? Lo so che è tra più di un mese, ma la vedo dura che il casino sparisca prima del 29 marzo.",,a
-257,Apparirò sadico ma con questa isteria mi è venuta voglia di rileggere Rumore Bianco di Delillo,,a
-258,"Buongiorno ragazzi. Avevo scritto un commento ieri al riguardo ma vorrei approfondire. Sabato 16 e l'altro ieri ho preso dei treni che avevano come fermate Codogno e Casalpusterlengo. Ovviamente, sono salite delle persone a queste fermate (anche l'altro ieri, nonostante ci fosse la quarantena). Di certo non ci ho parlato o pomiciato però le ho avute a pochissimi metri di distanza, condividendo lo stesso vagone. Non mi preoccupo tanto per me stesso però io oggi dovrei tornare in Emilia e da domani frequentare le lezioni nella mia università e, quindi, intraprendere attività sociali. Secondo voi, cosa dovrei fare ? Forse mi sto imparanoiando troppo",,a
-259,Non mi sento affatto bene....tosse e dolore toracico. Non so se chiamare il 112,,a
-260,Il sud riparta dal Coronavirus,,a
+Padova = Cina",1.0,positive
+255,Ecco mi sono svegliata tardi e adesso non riesco a trovare le mascherine da nessuna parte. Boh pazienza morirò,1.0,negative
+256,"Domanda: e il referendum? Lo so che è tra più di un mese, ma la vedo dura che il casino sparisca prima del 29 marzo.",1.0,negative
+257,Apparirò sadico ma con questa isteria mi è venuta voglia di rileggere Rumore Bianco di Delillo,1.0,positive
+258,"Buongiorno ragazzi. Avevo scritto un commento ieri al riguardo ma vorrei approfondire. Sabato 16 e l'altro ieri ho preso dei treni che avevano come fermate Codogno e Casalpusterlengo. Ovviamente, sono salite delle persone a queste fermate (anche l'altro ieri, nonostante ci fosse la quarantena). Di certo non ci ho parlato o pomiciato però le ho avute a pochissimi metri di distanza, condividendo lo stesso vagone. Non mi preoccupo tanto per me stesso però io oggi dovrei tornare in Emilia e da domani frequentare le lezioni nella mia università e, quindi, intraprendere attività sociali. Secondo voi, cosa dovrei fare ? Forse mi sto imparanoiando troppo",1.0,negative
+259,Non mi sento affatto bene....tosse e dolore toracico. Non so se chiamare il 112,1.0,negative
+260,Il sud riparta dal Coronavirus,1.0,negative
 261,"DAGLI DAGLI ALL'UNTORE!!!
 
 
-/s",,a
-262,"Voglio far notare come siano ""leggermente"" lievitati i prezzi delle mascherine su Amazon. Assurdo. Ad ogni modo a Marzo dovrò viaggiare fino a Bologna, quindi aVienna. Inizio a diventare paranoico?",,a
-263,Anche UniFe chiude fino al 01/03,,a
-264,Devo andare in corea del sud a pasqua e se mi annullano i voli mi gira il cazzo non poco. Ovviamente presi a dicembre quando c'era zero allarme.,,a
-265,"A Torino, dove è stato confermato un caso all'ospedale Amedeo di Savoia, si rischia la chiusura degli atenei?",,a
-266,I guess niente viaggio a Parigi questa settimana...,,a
-267,Onestamente ho più paura di essere contagiato da italiano che da cinesi,,a
-268,Raga domandone quante sono le probabilità che chiudano i licei di Milano lunedì? Ho una verifica e non ho voglia di studiare. God bless,,a
+/s",1.0,positive
+262,"Voglio far notare come siano ""leggermente"" lievitati i prezzi delle mascherine su Amazon. Assurdo. Ad ogni modo a Marzo dovrò viaggiare fino a Bologna, quindi aVienna. Inizio a diventare paranoico?",1.0,negative
+263,Anche UniFe chiude fino al 01/03,1.0,neutral
+264,Devo andare in corea del sud a pasqua e se mi annullano i voli mi gira il cazzo non poco. Ovviamente presi a dicembre quando c'era zero allarme.,1.0,negative
+265,"A Torino, dove è stato confermato un caso all'ospedale Amedeo di Savoia, si rischia la chiusura degli atenei?",1.0,neutral
+266,I guess niente viaggio a Parigi questa settimana...,1.0,negative
+267,Onestamente ho più paura di essere contagiato da italiano che da cinesi,1.0,negative
+268,Raga domandone quante sono le probabilità che chiudano i licei di Milano lunedì? Ho una verifica e non ho voglia di studiare. God bless,1.0,neutral
 269,"Bè comunque alla fine abbiamo chiamato l'800 qualcosa, abbiamo elencato i sintomi e vabbè, poi ci chiedono ""ma è stata in contatto con cinesi?"" dove contatto vale a dire starci abbracciati, gli abbiamo detto no, e quelli ci hanno detto ""allora è solo influenza"".
 
-Nel mentre ci siamo fatti regalare delle mascherine da un centro estetico cinese, così, per vivere il brivido.",,a
-270,"La politica del non allarmismo non è efficace laddove un popolo è incline per cultura a violare  regole e controlli il  basso senso di responsabilità   civico  unito ai mancati  controlli in tutti gli aeroporti ad a tutti i passeggeri di ogni volo  si aggiunge alle irresponsabilità di singoli individui , questo ha determinato il bel casino che abbiamo oggi, l'ultimo step adesso è la quarantena sotto il controllo di polizia e forza armate come già previsto dal decreto uscito ieri notte",,a
+Nel mentre ci siamo fatti regalare delle mascherine da un centro estetico cinese, così, per vivere il brivido.",1.0,positive
+270,"La politica del non allarmismo non è efficace laddove un popolo è incline per cultura a violare  regole e controlli il  basso senso di responsabilità   civico  unito ai mancati  controlli in tutti gli aeroporti ad a tutti i passeggeri di ogni volo  si aggiunge alle irresponsabilità di singoli individui , questo ha determinato il bel casino che abbiamo oggi, l'ultimo step adesso è la quarantena sotto il controllo di polizia e forza armate come già previsto dal decreto uscito ieri notte",1.0,negative
 271,"Comunque visto il tasso di mortalità per età, se avete meno di 40 anni questo è il momento migliore per far firmare alla nonna una polizza sulla vita, contagiarla con il coronavirus e vivere di rendita.  
 
 Vale anche con la suocera se anziana.
 
-/s",,a
-272,"Chiusa per una settimana anche Unife. Non mi stupirebbe se con il caso sospetto di Reggio Emilia, chiudessero anche Unibo.",,a
-273,"Domani avrei l’aereo per Milano e poi vado in treno fino a Parma (il regionale ferma pure a Lodi se non sbaglio). Che il contagio si diffonda nei prossimi giorni sembra abbastanza scontato, ma ancora ovviamente l’uni ancora non ha comunicato nulla. Bella storia",,a
+/s",1.0,positive
+272,"Chiusa per una settimana anche Unife. Non mi stupirebbe se con il caso sospetto di Reggio Emilia, chiudessero anche Unibo.",1.0,negative
+273,"Domani avrei l’aereo per Milano e poi vado in treno fino a Parma (il regionale ferma pure a Lodi se non sbaglio). Che il contagio si diffonda nei prossimi giorni sembra abbastanza scontato, ma ancora ovviamente l’uni ancora non ha comunicato nulla. Bella storia",1.0,negative
 274,Hanno sospeso le gite scolastiche,,a
 275,"La prossima settimana dovrei partire da Madrid per Bologna o Venezia. L'attuale paranoica chiusura di strutture varie al nord include anche aeroporti, stazioni, bus e quant'altro? Insomma, posso fare il viaggio senza problemi o devo aspettarmi drammi?",,a
 276,"C'è solo un modo di affrontare questa emergenza, ed é quello di seguire [il consiglio dell'ex sindaco di Campobasso](https://i.imgur.com/bvTxzOk.jpg).",,a
