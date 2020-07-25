@@ -20,7 +20,10 @@ Strangely enough, using those three keywords produced a plot that showed the num
 
 
 - The classificator LDA had some problems: the covid related keywords were in both detected topic clusters, therefore ambiguous. 
-- Using NMF this problem did not present itself. 
+- Using NMF this problem did not present itself, but:
+
+	- On clusters: the target number of clusters was set to 2 for a simple reason. Having more than that would result in covid-19 related keywords into more than one topic term clusters. 
+			since it would result in an unnecessary complexity for classifying an article in covid related (or not), 2 clusters was maintained as the target.
 
 - What the NMF is another unsupervised learning technique useful when we don't already have the topics assigned to our text data - the articles. It takes the bag of words matrix created in the previous step using the TfIdf vectorizer and reduces its dimensionality. The result will be an easily accessible data structure that allows us to get the prominent topic in the text. 
 
@@ -49,6 +52,20 @@ Strangely enough, using those three keywords produced a plot that showed the num
 # 3 Plotting
 
 	- Plotting was usually done between two non-directly comparable quantities: the number of articles by day and the number of positive cases by day. That is why an additional operation was required before printing, and that is scaling. More specifically we used the MinMaxScaler.
+
+# 4 Predictions
+
+One of the goals of this analysis was performing data prediction from, in this case, news articles published. Using the same techniques in 2.2 we tried to give a topic classification to each article, altough this time instead of simply having a flag saying "this article talks about covid" or "not", we did hot encoding on the article's content. As the reference bag of words we used a subset of terms in the topic's pool obtained through clustering. 
+
+The date, which we considered important had to be converted to another format since the former 'YYYY-mm-dd' was not well liked by a model. We chose to use a variant of the UNIX timestamp format, the number of 
+days since January 1st, 1970.
+
+Next step, we grouped up by date by summing the different rows so we would know how many times each term had been used in a day. This model was then used as training for the regressor: again, all this to try 
+to predict the number of new cases.
+
+As a regressor we used a Random Forest Regressor. After some parameter tuning we found out that having just the parameter bootstrap set to true we got the minimum MSE. Data was scaled before calculating it as it allowed for better interpretation. 
+
+Bonus point: we performed the same test but for trying to predict different columns of the dataset as the scripts allowed for an easy implementation. Surprisingly, different other columns were easily predictable by using articles.
 
 
 
