@@ -1,0 +1,54 @@
+# 1 Step
+
+- Preprocessing of and title, content : stemming, special character removal, stopwords removal (at this point we have the original dataset and the preprocessed
+
+
+# 1.1 Dummy analysis using keywords.
+
+ A first analysis was performed on the preprocessed dataset by using keywords. We worked under the assumption that any covid-related keyword, if appeared in a text, would imply that the text was also talking about covid. This is not always true. 
+
+Just by using 3 keywords, namely 'covid', 'coronavirus' and 'covid 19' we were able to match almost halfthe dataset (which might make sense since it was an intense period of media interest). 
+Adding more keywords would result in too much of the dataset being matched as covid-related. 
+
+Strangely enough, using those three keywords produced a plot that showed the number of articles mimicking quite similarly the spread of the virus over Italy. 
+
+
+# 2 Step classification using NMF and LDA
+
+- Clustering of topic by content, based on similarity it assigns to groups: 
+	Using CountVectorizer we got the Bag of Words from the dataframe (column content)
+
+
+- The classificator LDA had some problems: the covid related keywords were in both detected topic clusters, therefore ambiguous. 
+- Using NMF this problem did not present itself. 
+
+- What the NMF is another unsupervised learning technique useful when we don't already have the topics assigned to our text data - the articles. It takes the bag of words matrix created in the previous step using the TfIdf vectorizer and reduces its dimensionality. The result will be an easily accessible data structure that allows us to get the prominent topic in the text. 
+
+
+# 2.1 Step: Analysis for Lombardia, separately
+
+	- By filtering from the previous dataset we only looked for Lombardia as it was the most 
+	impacted region for number of covid-19 cases. 
+
+	- The graphs showed the new positive cases over time diminished, the news published did not really follow the trend. On the contrary, they seemed to keep the same pace even after the peak.
+
+
+# 2.2 Region analysis and by zone
+
+	- Here we used the preprocessed dataset to perform a first analysis on the various region of Italy, seeing how the situation evolved for news outlets along the pandemic. 
+
+	- We chose the best performing model from the previous step (2.1) to perform another topic classification.
+
+	- We did not have any reference (pre-classified) dataset, so we made a comparison between the dummy model and the NMF. Results showed that the NMF was able to match around 78% of the articles that were flagged by the dummy classifier.
+
+
+	- Using the newly generated data by the NMF we did a visual comparison of the difference between spread of the virus and number of articles - by day and by region. We noticed that in the northern region, and those more affected the number of news related to covid trended upwards relative to the number of positive cases. Southern regions, which were generally less affected by the virus showed more consistency (correlation) between the news published and number of covid cases.
+
+	- Zones: when looking for a relation between covid news published by zone we did not find any high correlation, both negative nor positive, between number of news and number of positive cases.
+
+# 3 Plotting
+
+	- Plotting was usually done between two non-directly comparable quantities: the number of articles by day and the number of positive cases by day. That is why an additional operation was required before printing, and that is scaling. More specifically we used the MinMaxScaler.
+
+
+
