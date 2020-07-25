@@ -5,17 +5,17 @@
 1,">Ore 19.30 - Il presunto «paziente 0» negativo a tutti i test
 Non ha mai avuto il coronavirus il presunto `paziente zero´, l’amico del 38enne di Codogno che era stato a cena con lui dopo esser tornato dalla Cina. Lo ha detto ai cronisti il viceministro della Salute Pierpaolo Sileri. «Dai test effettuati - ha detto - è emerso che non ha sviluppato gli anticorpi». L’uomo era già risultato negativo al primo test per il coronavirus. Dunque, non è partita da lui la diffusione del virus nel lodigiano.
 
-Annamo bene",,a
+Annamo bene",1.0,negative
 2,"> Si allontana da Codogno e torna ad Avellino: famiglia in quarantena
 Si è allontanato da Codogno, in provincia di Lodi, dove risiede, nonostante la quarantena imposta per l'emergenza da coronavirus, ed è ritornato nel paese di origine a Montefusco, comune di un migliaio di abitanti in provincia di Avellino. Un 27enne è ora sottoposto alla quarantena assieme a tutta la sua famiglia
 
 
-***** ***!",,a
+***** ***!",1.0,neutral
 3,"Dogana slovenia/croazia. Il poliziotto croato che doveva controllarmi i documenti se ne resta ad un metro di distanza e mi fa ""vai pure, non ti controllo se no mi passi il coronavirus""
 :) simpaticone :)
 
 Magari al ritorno riempio la
-macchina di droga o armi tanto non mi controllano /s",,a
+macchina di droga o armi tanto non mi controllano /s",1.0,negative
 4,"ho dato una veloce occhiata sui social 
 
 Nord: moriremo tutti
@@ -24,15 +24,15 @@ Centro: morirete tutti
 
 Sud: aiutiamoli a casa loro 
 
- ALT-F4",,a
-5,Il lato positivo è che finalmente possono fare stockpiling e sentirmi un vero americano,,a
-6,[deleted],,a
-7,Comunque ora che ci penso dovrei disinfettare il cellulare più spesso. Cioè è inutile se mi lavo le mani 20 volte e alla fine il telefono mai.,,a
-8,Ansietta,,a
+ ALT-F4",1.0,negative
+5,Il lato positivo è che finalmente possono fare stockpiling e sentirmi un vero americano,1.0,positive
+6,[deleted],1.0,neutral
+7,Comunque ora che ci penso dovrei disinfettare il cellulare più spesso. Cioè è inutile se mi lavo le mani 20 volte e alla fine il telefono mai.,1.0,positive
+8,Ansietta,1.0,negative
 9,"Possiamo ritaggare in MEGATHREAT?
 
-Paging u/zeando",,a
-10,Milano come Raccoon City?,,a
+Paging u/zeando",1.0,neutral
+10,Milano come Raccoon City?,1.0,negative
 11,"Testo del decreto legge
 
 
@@ -96,15 +96,15 @@ Le autorità competenti hanno la facoltà di adottare ulteriori misure di conten
 Art. 3
 Le misure di contenimento di cui agli articoli 1 e 2 sono adottate con decreto del Presidente del Consiglio dei ministri su proposta del ministro della Salute, sentito il ministro dell’Interno, il ministro della Difesa, il ministro dell’Economia e delle Finanze e gli altri ministri competenti per materia, nonchè il presidente della Regione competente, nel caso in cui riguardino una sola regione, ovvero il presidente della Conferenza dei presidente delle regioni, nel caso in cui riguardino più regioni.
 Nelle more dell’adozione del decreto del presidente del Consiglio di cui al comma 1, nei casi di estrema necessità ed urgenza le misure di conteminento di cui agli articoli 1 e 2 possono essere adottate ai sensi dell’articolo 32 della legge 23 dicembre 1978, n. 833, dell’articolo 117 del decreto legislativo 31 marzo 1998, n. 112, e dell’articolo 50 del testo unico delle leggi sull’ordinamento degli enti locali, approvato con decreto legislativo 18 agosto 2000, n. 267.
-Sono fatti salvi gli effetti delle ordinanze contingibili e urgenti già adottate dal ministero della Salute ai sensi dell’articolo 32 della legge 23 dicembre 1978, n. 833.",,a
-12,"Il consiglio dei ministri sta andando per le lunghe più di quanto previsto, perché stanno spiegando a di Maio la differenza tra batteri e virus.",,a
-13,[deleted],,a
-14,"Anche ilmeteo di Antonio Sanò è in prima linea per spargere allarmismo, come sempre, anche al di fuori del suo tradizionale campo meteoterroristico: non andate sul sito per vedere il titolo, serve solo a garantirgli maggiori guadagni, ve lo scrivo io qui: ""EPIDEMIA CORONAVIRUS DILAGA IN ITALIA, GIà 2 MORTI"" (tutto maiuscolo ovviamente).",,a
-15,"Colleghi in metro, non sentite anche voi il virus nel petto?",,a
-16,"u/zeando consiglierei di mettere in evidenza il numero verde 1500 nel caso di sospetto di coronavirus. Non penso sia saggio chiamare numeri a caso (112, 118, ecc.)",,a
-17,"sto seguendo mentana, sta dicendo che è appena finita la riunione del CdM. A quanto pare vogliono adottare una linea dura e isolare per due settimane le zone di focolaio del virus",,a
-18,"[Coronavirus, vescovo vieta lo scambio della pace. Scuole chiuse fino a martedì](https://www.ansa.it/emiliaromagna/notizie/2020/02/21/coronavirus-verifiche-nel-piacentino_e6227d73-98c3-4b65-9427-eb35257ff6d4.html)",,a
-19,"Ho appena visto su Amazon che i prezzi per disinfettanti e affini sono saliti alle stelle. Un venditore ha addirittura i flaconcini di Amuchina per mani da 80ml a più di 25€ ciascuno. Ma, c'è veramente gente che glieli comprerà?",,a
+Sono fatti salvi gli effetti delle ordinanze contingibili e urgenti già adottate dal ministero della Salute ai sensi dell’articolo 32 della legge 23 dicembre 1978, n. 833.",1.0,neutral
+12,"Il consiglio dei ministri sta andando per le lunghe più di quanto previsto, perché stanno spiegando a di Maio la differenza tra batteri e virus.",1.0,positive
+13,[deleted],1.0,neutral
+14,"Anche ilmeteo di Antonio Sanò è in prima linea per spargere allarmismo, come sempre, anche al di fuori del suo tradizionale campo meteoterroristico: non andate sul sito per vedere il titolo, serve solo a garantirgli maggiori guadagni, ve lo scrivo io qui: ""EPIDEMIA CORONAVIRUS DILAGA IN ITALIA, GIà 2 MORTI"" (tutto maiuscolo ovviamente).",1.0,negative
+15,"Colleghi in metro, non sentite anche voi il virus nel petto?",1.0,negative
+16,"u/zeando consiglierei di mettere in evidenza il numero verde 1500 nel caso di sospetto di coronavirus. Non penso sia saggio chiamare numeri a caso (112, 118, ecc.)",1.0,positive
+17,"sto seguendo mentana, sta dicendo che è appena finita la riunione del CdM. A quanto pare vogliono adottare una linea dura e isolare per due settimane le zone di focolaio del virus",1.0,negative
+18,"[Coronavirus, vescovo vieta lo scambio della pace. Scuole chiuse fino a martedì](https://www.ansa.it/emiliaromagna/notizie/2020/02/21/coronavirus-verifiche-nel-piacentino_e6227d73-98c3-4b65-9427-eb35257ff6d4.html)",1.0,negative
+19,"Ho appena visto su Amazon che i prezzi per disinfettanti e affini sono saliti alle stelle. Un venditore ha addirittura i flaconcini di Amuchina per mani da 80ml a più di 25€ ciascuno. Ma, c'è veramente gente che glieli comprerà?",1.0,negative
 20,"Protezione civile, ultimo aggiornamento sul coronavirus in Italia.
 
 79 contagiati, di cui 2 morti e un dimesso.
@@ -113,56 +113,56 @@ Ricoverati con sintomi 33
 
 In terapia intensiva 18
 
-Positive in isolamento domiciliare 11",,a
-21,Mi pare di capire che fino a ieri venivano analizzati solo i pazienti in situazioni critiche. Chissà in quanti sono guariti dopo una leggera febbre ma hanno contagiato le persone attorno.,,a
-22,ci sta unendo più del tifo per l’italia durante i mondiali questo coronavirus,,a
+Positive in isolamento domiciliare 11",1.0,neutral
+21,Mi pare di capire che fino a ieri venivano analizzati solo i pazienti in situazioni critiche. Chissà in quanti sono guariti dopo una leggera febbre ma hanno contagiato le persone attorno.,1.0,negative
+22,ci sta unendo più del tifo per l’italia durante i mondiali questo coronavirus,1.0,positive
 23,"Allora, la tipa incinta che ha il coronavirus è la amica stretta del capo del mio amico. Io sono uscito con lui ieri sera e oggi mi dice sta cosa. La cosa che mi fa incazzare è che il mio amico è andato a lavorare già malato da gennaio e ora ho paura, dovrei contattare 118? Ho un bambino di 2 mesi a casa 
 
 
-Repost perchè il commento è stato eliminato",,a
-24,Nelle mie zone non si riesce a trovare amuchina,,a
-25,Ieri sera al master eravamo tutti medici e infermieri e la conclusione a cui siamo arrivati è che non dobbiamo preoccuparci ma dobbiamo occuparcene molto bene,,a
-26,[removed],,a
-27,[deleted],,a
-28,"Ma non sto capendo, lunedì a Milano non lavora nessuno? Si ferma mezza lombardia e Veneto?",,a
+Repost perchè il commento è stato eliminato",1.0,negative
+24,Nelle mie zone non si riesce a trovare amuchina,1.0,negative
+25,Ieri sera al master eravamo tutti medici e infermieri e la conclusione a cui siamo arrivati è che non dobbiamo preoccuparci ma dobbiamo occuparcene molto bene,1.0,positive
+26,[removed],1.0,neutral
+27,[deleted],1.0,neutral
+28,"Ma non sto capendo, lunedì a Milano non lavora nessuno? Si ferma mezza lombardia e Veneto?",1.0,negative
 29,"Sono appena atterrato a Charles de Gaulle da Milano, l'unica misura che hanno preso i francesi è un cartellino in cui raccomandano che, se torni dalla Cina, per due settimane dovresti stare attento ai sintomi e non andare troppo in giro. 
 
-Secondo me se iniziano a testare le loro polmoniti in ospedale altro che 50 casi...",,a
+Secondo me se iniziano a testare le loro polmoniti in ospedale altro che 50 casi...",1.0,negative
 30,"A quanto pare confermato il primo caso a Milano
 
-https://www.google.com/amp/s/www.fanpage.it/attualita/coronavirus-confermato-il-primo-caso-a-milano-positivo-un-paziente-ricoverato-al-san-raffaele/amp/",,a
+https://www.google.com/amp/s/www.fanpage.it/attualita/coronavirus-confermato-il-primo-caso-a-milano-positivo-un-paziente-ricoverato-al-san-raffaele/amp/",1.0,neutral
 31,"Ma poi sto tipo abita a Sesto e lavora a Cesano, praticamente ha infettato una parte e l'altra di Milano. Bella lì
 
-Edit. Ho confuso il tipo di Milano con quello di Torino, fate finta di non aver letto",,a
+Edit. Ho confuso il tipo di Milano con quello di Torino, fate finta di non aver letto",1.0,negative
 32,"Ho pensato a una cosa. Sono abbastanza ignorante in materia, smentitemi pure se dico fesserie. Ora, stando a quello che dice l'OMS, l'80% dei casi presenta sintomi lievi paragonabili a un raffreddore o influenza. Alcuni dei casi sono più seri e portano a una polmonite, una frazione di questi casi è fatale per il paziente.   
 
 
-Diamo per buono e attendibile questo dato (non so quanto possa esserlo provenendo dalla Cina). Significa che il virus può essere scambiato per una semplice influenza, anche d'influenza ci si muore o si può prendere una polmonite. In che caso ci si accorge del Coronavirus? Quando il paziente comunica che è stato in contatto con cinesi o persone che sono state a contatto con cinesi, quindi fanno il test e scoprono il caso. Può essere che in realtà al momento il coronavirus è incredibilmente diffuso in Italia ma viene scambiato per una semplice influenza, perché nessuno fa i test se non quando il paziente comunica di essere stato in contatto con cinesi?",,a
+Diamo per buono e attendibile questo dato (non so quanto possa esserlo provenendo dalla Cina). Significa che il virus può essere scambiato per una semplice influenza, anche d'influenza ci si muore o si può prendere una polmonite. In che caso ci si accorge del Coronavirus? Quando il paziente comunica che è stato in contatto con cinesi o persone che sono state a contatto con cinesi, quindi fanno il test e scoprono il caso. Può essere che in realtà al momento il coronavirus è incredibilmente diffuso in Italia ma viene scambiato per una semplice influenza, perché nessuno fa i test se non quando il paziente comunica di essere stato in contatto con cinesi?",1.0,negative
 33,"Ho aggiunto alla mia [mappa di tutti i casi di contagio in Italia](https://drive.google.com/open?id=1Ty55dqSF1MJ2CvtmWUxLUz2Fo6SoE3Gk) anche un layer con i contagi per ragione, dato che l'update mattutino di Zaia non ha precisato i comuni. Aggiornati sia il layer con i contagi per comune che il layer dei comuni in isolamento.
 
 La mappa di usa selezionando il layer da visualizzare dalla legenda a sinistra. Di default li mostra tutti e tre sovrapposti.
 
-Suggerimenti e/o modifiche da apportare sono benvenuti :)",,a
+Suggerimenti e/o modifiche da apportare sono benvenuti :)",1.0,neutral
 34,"Altri 2 casi accertati a Torino
 
-Se cominciano a prendere tamponi a tappeto nelle grandi città per me salta fuori quanto è effettivamente grave la situazione",,a
-35,"Assurdo che in Veneto ci siano così tante limitazioni per eventi sportivi ecc... però no, il carnevale di Venezia non si tocca.",,a
-36,Nel marasma di titoli dei giornali di oggi spicca come solito quello di [Libero](https://www.ilpost.it/2020/02/23/le-prime-pagine-di-oggi-2428/libero-2020-02-23-5e51cc5a08119/).,,a
-37,"Questa situazione mi ha fatto riflettere sul ruolo dei giornali e telegiornali nella nostra vita: li usiamo come fonte di informazione, e in una situazione come questa avere informazioni esatte è vitale (misure di prevenzione, ad esempio). Però i giornali sono ormai diventati alla stregua di una fonte di intrattenimento, sempre impegnati ad accattivarsi la nostra attenzione, e lo stanno facendo anche adesso dipingendo la situazione come un film catastrofico (fanpage dice ""lodi, la wuhan italiana. Mavaff...) Quindi niente, mi deprime un po' che per fare più audience i mezzi di informazione mischino verità e melodramma.",,a
+Se cominciano a prendere tamponi a tappeto nelle grandi città per me salta fuori quanto è effettivamente grave la situazione",1.0,negative
+35,"Assurdo che in Veneto ci siano così tante limitazioni per eventi sportivi ecc... però no, il carnevale di Venezia non si tocca.",1.0,negative
+36,Nel marasma di titoli dei giornali di oggi spicca come solito quello di [Libero](https://www.ilpost.it/2020/02/23/le-prime-pagine-di-oggi-2428/libero-2020-02-23-5e51cc5a08119/).,1.0,neutral
+37,"Questa situazione mi ha fatto riflettere sul ruolo dei giornali e telegiornali nella nostra vita: li usiamo come fonte di informazione, e in una situazione come questa avere informazioni esatte è vitale (misure di prevenzione, ad esempio). Però i giornali sono ormai diventati alla stregua di una fonte di intrattenimento, sempre impegnati ad accattivarsi la nostra attenzione, e lo stanno facendo anche adesso dipingendo la situazione come un film catastrofico (fanpage dice ""lodi, la wuhan italiana. Mavaff...) Quindi niente, mi deprime un po' che per fare più audience i mezzi di informazione mischino verità e melodramma.",1.0,negative
 38,"Chiedo scusa, è colpa mia. 
-A novembre per la prima volta ho deciso di fare il vaccino antinfluenzale perché avevo deciso di evitarmi i soliti malanni di stagione.",,a
-39,Un caso diagnosticato a torino tgcom24,,a
+A novembre per la prima volta ho deciso di fare il vaccino antinfluenzale perché avevo deciso di evitarmi i soliti malanni di stagione.",1.0,positive
+39,Un caso diagnosticato a torino tgcom24,1.0,neutral
 40,"In emilia romagna adottato il protocollo di testare per coronavirus tutti i pazienti ricoverati per polmonite
 
-https://tg24.sky.it/cronaca/2020/02/22/coronavirus-italia-ultime-notizie-diretta.html",,a
-41,Mi spiegate perchè dovrei fare scorte di cibo?,,a
+https://tg24.sky.it/cronaca/2020/02/22/coronavirus-italia-ultime-notizie-diretta.html",1.0,neutral
+41,Mi spiegate perchè dovrei fare scorte di cibo?,1.0,neutral
 42,"https://www.lastampa.it/cronaca/2020/02/22/news/ricciardi-oms-l-italia-ha-sbagliato-chiudere-i-voli-dalla-cina-non-serve-quando-ci-sono-quelli-indiretti-1.38503026
 
 > Ha fatto bene l’Italia a chiudere i voli dalla Cina?
 
-> «Come ribadito a più riprese dall’Oms è una decisione che alla base non ha alcuna evidenza scientifica. Anzi, può essere controproducente, perché tramite altri scali internazionali possono comunque entrare persone provenienti dalla Cina delle quali si finisce per perdere il controllo. Quello che serve in questo momento è controllare l’elenco dei passeggeri e isolarli se vengono da Paesi sospetti. Se poi malauguratamente l’epidemia dovesse trasformarsi in pandemia allora si dovrebbe disporre un blocco totale dei voli».",,a
-43,[deleted],,a
-44,"Well, addio gita di quinta",,a
+> «Come ribadito a più riprese dall’Oms è una decisione che alla base non ha alcuna evidenza scientifica. Anzi, può essere controproducente, perché tramite altri scali internazionali possono comunque entrare persone provenienti dalla Cina delle quali si finisce per perdere il controllo. Quello che serve in questo momento è controllare l’elenco dei passeggeri e isolarli se vengono da Paesi sospetti. Se poi malauguratamente l’epidemia dovesse trasformarsi in pandemia allora si dovrebbe disporre un blocco totale dei voli».",1.0,neutral
+43,[deleted],1.0,neutral
+44,"Well, addio gita di quinta",1.0,negative
 45,"Onestamente penso che i telegiornali e i media italiani siano sempre esagerati.
 
 Ma stavolta l'aspetto positivo è che la gente prende sul serio la cosa.
@@ -171,13 +171,13 @@ Non ci credo che in Italia, l'unico paese che ha chiuso i voli diretti con la Ci
 
 Il sistema sanitario italiano è ottimo. Vediamo come andrà a finire.
 
-Intanto inizio a preparare la cantina..",,a
-46,La mia azienda (Milano) chiude Lunedì per precauzione. A me più della malattia fa paura la quarantena coatta,,a
-47,È una buona notizia che io nei periodi freddi dell'anno devo sempre soffiarmi il naso senza essere malato? Alla fine respirando il virus si attacca al muco che soffio ogni tot. No? No? NO!?!,,a
+Intanto inizio a preparare la cantina..",1.0,positive
+46,La mia azienda (Milano) chiude Lunedì per precauzione. A me più della malattia fa paura la quarantena coatta,1.0,neutral
+47,È una buona notizia che io nei periodi freddi dell'anno devo sempre soffiarmi il naso senza essere malato? Alla fine respirando il virus si attacca al muco che soffio ogni tot. No? No? NO!?!,1.0,positive
 48,"Vabbé che le mascherine non se ne trovano più, ma la gente sta esagerando con ""la corsa al supermercato"".   
-Reparto carne letteralmente svuotato",,a
-49,"Abito a Sesto San Giovanni, mio padre è stato ricoverato al San Raffaele per tre giorni, è uscito ieri e oggi è tornato per un esame, mentre facevano i tamponi. Ho parecchia paura",,a
-50,Secondo Mentano nel cdm si starebbe decidendo addirittura l'isolamento per 2 settimane delle zone colpite,,a
+Reparto carne letteralmente svuotato",1.0,negative
+49,"Abito a Sesto San Giovanni, mio padre è stato ricoverato al San Raffaele per tre giorni, è uscito ieri e oggi è tornato per un esame, mentre facevano i tamponi. Ho parecchia paura",1.0,negative
+50,Secondo Mentano nel cdm si starebbe decidendo addirittura l'isolamento per 2 settimane delle zone colpite,1.0,negative
 51,"## [post riservato per i commenti informativi]  
 [Lista di bufale che l'organizzazione mondiale della sanità ha già individuato e smentito.](https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters)  
   
@@ -207,13 +207,13 @@ Reparto carne letteralmente svuotato",,a
   
 ---  
   
-Ed altri freschi freschi di MSpaint da r/BancaDelMeme/",,a
-52,"Hanno rimandato The Last of Us 2 ma noi italiani ce lo avremo in anteprima, tiè!",,a
+Ed altri freschi freschi di MSpaint da r/BancaDelMeme/",1.0,positive
+52,"Hanno rimandato The Last of Us 2 ma noi italiani ce lo avremo in anteprima, tiè!",1.0,positive
 53,"al TG di la7 hanno detto una cosa che potrebbe cambiare tutto, il presunto paziente-0 asintomatico non ha gli anticorpi da coronavirus , in soldoni non e' il paziente 0 .
 
 Questo vuol dire che il paziente-1 potrebbe non essere il paziente-1 
-e che forse questo troncone e' collegato ai casi in veneto con casi ancora da scoprire o forse non centra nulla",,a
-54,"Se chiamate il 211 vengono in retromarcia, provare per credere...",,a
+e che forse questo troncone e' collegato ai casi in veneto con casi ancora da scoprire o forse non centra nulla",1.0,neutral
+54,"Se chiamate il 211 vengono in retromarcia, provare per credere...",1.0,positive
 55,"[Dal Corriere:
 ](https://www.corriere.it/cronache/20_febbraio_22/coronavirus-giornata-diretta-rientrati-italia-19-crocieristi-b28a2dd0-5551-11ea-8418-2150c9ca483e.shtml)
 >Ore 18.35 - Un caso anche a Milano
