@@ -805,37 +805,37 @@ Vale anche con la suocera se anziana.
 /s",1.0,positive
 272,"Chiusa per una settimana anche Unife. Non mi stupirebbe se con il caso sospetto di Reggio Emilia, chiudessero anche Unibo.",1.0,negative
 273,"Domani avrei l’aereo per Milano e poi vado in treno fino a Parma (il regionale ferma pure a Lodi se non sbaglio). Che il contagio si diffonda nei prossimi giorni sembra abbastanza scontato, ma ancora ovviamente l’uni ancora non ha comunicato nulla. Bella storia",1.0,negative
-274,Hanno sospeso le gite scolastiche,,a
-275,"La prossima settimana dovrei partire da Madrid per Bologna o Venezia. L'attuale paranoica chiusura di strutture varie al nord include anche aeroporti, stazioni, bus e quant'altro? Insomma, posso fare il viaggio senza problemi o devo aspettarmi drammi?",,a
-276,"C'è solo un modo di affrontare questa emergenza, ed é quello di seguire [il consiglio dell'ex sindaco di Campobasso](https://i.imgur.com/bvTxzOk.jpg).",,a
-277,"complimenti per il thread accurato, usiamo internet per l’informazione seria e precisa",,a
+274,Hanno sospeso le gite scolastiche,1.0,negative
+275,"La prossima settimana dovrei partire da Madrid per Bologna o Venezia. L'attuale paranoica chiusura di strutture varie al nord include anche aeroporti, stazioni, bus e quant'altro? Insomma, posso fare il viaggio senza problemi o devo aspettarmi drammi?",1.0,neutral
+276,"C'è solo un modo di affrontare questa emergenza, ed é quello di seguire [il consiglio dell'ex sindaco di Campobasso](https://i.imgur.com/bvTxzOk.jpg).",1.0,neutral
+277,"complimenti per il thread accurato, usiamo internet per l’informazione seria e precisa",1.0,positive
 278,"Lungi da me fare il complottato, ma:
 
 * Si sono svegliati adesso a fare i tamponi alla gente ricoverata da giorni per polmonite?
 * Quanti cazzo di medici si sono ammalati? Scommetto niente mascherine e guanti, furboni... Torniamo al punto 1: ma fare un tampone?
-* Ma sto idiota che si è fatto calcetto, maratona, ecc... È andato al PS e l’hanno mandato a casa? Superficialità da pronto soccorso, colpa anche di quelli che vanno al ps per una febbrina, poi i casi gravi non vengono riconosciuti...",,a
-279,[removed],,a
-280,Se a Marzo non riesco a andare in vacanza per colpa di qualche blocco aereoportuale faccio una strage,,a
+* Ma sto idiota che si è fatto calcetto, maratona, ecc... È andato al PS e l’hanno mandato a casa? Superficialità da pronto soccorso, colpa anche di quelli che vanno al ps per una febbrina, poi i casi gravi non vengono riconosciuti...",1.0,negative
+279,[removed],1.0,neutral
+280,Se a Marzo non riesco a andare in vacanza per colpa di qualche blocco aereoportuale faccio una strage,1.0,negative
 281,"Tutta questa situazione mi ha fatto tornare in mente [Panico papanico pauuura](https://www.youtube.com/watch?v=BSERMhD_VFw)  
-Tra l'altro non mi ricordavo che fosse già così vecchia!",,a
-282,Napoli ha già chiuso le scuole?,,a
-283,"E' fatta,in pratica in quei comuni vige la legge marziale; Conte il discoso da primo semestre di giurisprudenza sul bilanciamento di interessi costituzionalmente garantti se lo poteva anche risparmiare, visto che a quel punto sarebbe da fargli notare la libertà di circolazione è coperta da riserva di legge RINFORZATA, e non dovrebbe far riferimento a norma extrapenale, come in questo caso le ordinanze locali, a definirne tempi e modi di restrizione.",,a
-284,Ma quindi il 38enne è ufficialmente un superspreader?,,a
-285,Milano Isola-Pprta Genova. 13 mascherine avvistate. Poteva andare peggio.,,a
-286,"lavoro in provincia di Milano, abbastanza vicino alla città, lunedi torno in ufficio o?",,a
-287,"Ho una trasferta lavorativa a Milano per lunedì, devo pensare di annullarla secondo voi?",,a
-288,"The United States National Institutes of Health (NIH) started cooperating with the biotechnology company Moderna to create a vaccine, hoping to start human testing by May 2020, with a strategy to make an RNA vaccine matching a spike of the coronavirus surface. The University of Queensland (UQ) strategy is to develop a molecular clamp vaccine that genetically modifies viral proteins to make them mimic the coronavirus and stimulate an immune reaction.",,a
+Tra l'altro non mi ricordavo che fosse già così vecchia!",1.0,positive
+282,Napoli ha già chiuso le scuole?,1.0,neutral
+283,"E' fatta,in pratica in quei comuni vige la legge marziale; Conte il discoso da primo semestre di giurisprudenza sul bilanciamento di interessi costituzionalmente garantti se lo poteva anche risparmiare, visto che a quel punto sarebbe da fargli notare la libertà di circolazione è coperta da riserva di legge RINFORZATA, e non dovrebbe far riferimento a norma extrapenale, come in questo caso le ordinanze locali, a definirne tempi e modi di restrizione.",1.0,neutral
+284,Ma quindi il 38enne è ufficialmente un superspreader?,1.0,neutral
+285,Milano Isola-Pprta Genova. 13 mascherine avvistate. Poteva andare peggio.,1.0,negative
+286,"lavoro in provincia di Milano, abbastanza vicino alla città, lunedi torno in ufficio o?",1.0,neutral
+287,"Ho una trasferta lavorativa a Milano per lunedì, devo pensare di annullarla secondo voi?",1.0,neutral
+288,"The United States National Institutes of Health (NIH) started cooperating with the biotechnology company Moderna to create a vaccine, hoping to start human testing by May 2020, with a strategy to make an RNA vaccine matching a spike of the coronavirus surface. The University of Queensland (UQ) strategy is to develop a molecular clamp vaccine that genetically modifies viral proteins to make them mimic the coronavirus and stimulate an immune reaction.",1.0,neutral
 289,"Ho creato il nuovo megathread per oggi:  
-https://www.reddit.com/r/italy/comments/f87rbo/megathread_4_coronavirus/",,a
-290,"oggi ho scoperto che uno che conosco è il cugino del capitano della nave da crociera bloccata in cambogia. boh, così.",,a
+https://www.reddit.com/r/italy/comments/f87rbo/megathread_4_coronavirus/",1.0,neutral
+290,"oggi ho scoperto che uno che conosco è il cugino del capitano della nave da crociera bloccata in cambogia. boh, così.",1.0,neutral
 291,"Purtroppo mi è salita la paranoia anche a me. Premettendo che abito molto lontano dai luoghi del focolaio (sono di Napoli), oggi dovremmo andare ad un pranzo di famiglia con mia Nonna, che dista 2 linee di metro (macchina inservibile).
 Adesso mi è salita un po' di ansia, perché alla fine i casi di questi giorni sono solo stati trovati grazie ai test, ma chissà da quanto andavano avanti e per questo do quasi per scontato che altri focolai possano essersi sviluppati nel resto dell'Italia, specie in una grande città come Napoli.
 Ora io non ho molto da temere, essendo un ventenne relativamente in salute, ma se mia Nonna si becca questo virus s'accapotta 100/100.
 
-Paranoia ingiustificata oppure potrebbe essere il caso di annullare questo pranzo?",,a
+Paranoia ingiustificata oppure potrebbe essere il caso di annullare questo pranzo?",1.0,negative
 292,"Oggi dovevo andare in gita in Bosnia e come sono uscito di casa mi è arrivato il messaggio: tutto cancellato, non si parte più.
 
-Sto cercando di smaltire la depressione, consigli?",,a
+Sto cercando di smaltire la depressione, consigli?",1.0,negative
 293,"Tempo due settimane (tre massimo) e saremo a migliaia di casi, mark my words.  
 Ormai è fuori controllo, dubito altamente che possano contenerlo.  
 
@@ -873,32 +873,32 @@ FINAL PREDICTION: 9000 casi a metà marzo, di cui almeno 1000+ rilevati.
 
 **EDIT2:** In meno di 10 giorni abbiamo superato 2000 casi. Non ridete più adesso, eh?  
 
-**EDIT3:** 2 weeks gone, 1 to go. 5883 casi. Secondo me i 9500 del calcolo li superiamo pure.",,a
+**EDIT3:** 2 weeks gone, 1 to go. 5883 casi. Secondo me i 9500 del calcolo li superiamo pure.",1.0,negative
 294,"Oggi vado a cena dai miei e madre e sorella iniziano a urlarmi di lavarmi le mani, completamente nel panico.
 
 Sono fuori dal mondo da una settimana e vedo che il panico sta arrivando anche su Reddit, che cosa mi sono perso?
 
-EDIT: Grazie del downvote, sto solo chiedendo spiegazioni non sapendo da dove iniziare a cercarle",,a
-295,Ma /r/ Italy ha un discord?,,a
-296,[deleted],,a
-297,Ma il tipo che si lamentava della deviazione dei flussi pedonali a Venezia che minavano la sua libertà individuale adesso cosa dice?,,a
-298,"Ragazzi dovrei partire per milano il 25/02 e starci per 3 giorni, so che hanno chiuso le universita' e la gente sta dando di matto svuotando supermercati (Fonte semi-certa, amici di amici inviano foto su wa) dovrei spostare la data/chiedere un rimborso?",,a
-299,"Avendo chiuso a Ferrara, che probabilità c'è che chiudano anche unibo secondo voi?",,a
-300,"non ho fonti ma ho appena sentito su https://www3.nhk.or.jp/nhkworld/en/live/ che apparentemente il virus non è originato dai wet market di wuhan, c'è uno studio in cinese che va in dettagli, probabilmente se ne verrà a sapere domani o fra qualche giorno.",,a
-301,"Rinviate Inter-Samp, Verona-Cagliari e Atalanta-Sassuolo",,a
-302,"come mai in Italia il numero di contagiati è così alto, mentre Germania e Francia sono riusciti a contenere l'aumento dei contagi? Cosa non abbiamo fatto di diverso?",,a
-303,"Ragazzi qualcuno di voi con sintomi ha chiamato il 112? Vorrei sapere la vostra esperienza. Una mia amica di Milano che lavora nel settore della moda e quindi nell'ultimo periodo era parecchio in giro, con 39 di febbre e tosse da 3 giorni, le hanno detto che se non è stata a stretto contatto con i casi confermati non le faranno il tampone. E' uno scherzo? Posso capire se fosse di una città non a rischio, ma a Milano?",,a
-304,"Scusate la domande beota, non so nemmeno se sia consona al thread, ma se dovessero sospendersi le lezioni universitarie che succederebbe ai corsi, *gone for good*? Durante questo semestre dovrei frequentare un corso che, appunto, in genere si fa durante il secondo semestre. Se dovesse saltare a causa di questa crisi dovrei aspettare 12 mesi prima di poterlo frequentare di nuovo? Lo so che sono cretino, ma la cosa che mi dà più fastidio della situazione corrente è non poter frequentare le lezioni in pace (visto che ovviamente si diffonderà anche nell'Urbe), che sono la cosa che preferisco dell'università. Non è tanto la fine del mondo quanto lo sarebbe contrarre il virus, ma sono comunque molto infastidito, stavo hyppando questi due corsi da mesi. Scusatemi ancora il rant che non c'entra un cazzo, grazie per aver letto. :\",,a
-305,Il paziente zero è un pangolino scappato da un mercato cinese a Prato.,,a
-306,Secondo voi dovrebbero interrompere già i voli?,,a
-307,Cos'è il periodo d'incubazione?,,a
-308,Ma se uno è passato a Milano negli ultimi 15-20 giorni deve considerarsi a rischio come fosse passato da wuhan?,,a
+EDIT: Grazie del downvote, sto solo chiedendo spiegazioni non sapendo da dove iniziare a cercarle",1.0,negative
+295,Ma /r/ Italy ha un discord?,1.0,neutral
+296,[deleted],1.0,neutral
+297,Ma il tipo che si lamentava della deviazione dei flussi pedonali a Venezia che minavano la sua libertà individuale adesso cosa dice?,1.0,positive
+298,"Ragazzi dovrei partire per milano il 25/02 e starci per 3 giorni, so che hanno chiuso le universita' e la gente sta dando di matto svuotando supermercati (Fonte semi-certa, amici di amici inviano foto su wa) dovrei spostare la data/chiedere un rimborso?",1.0,negative
+299,"Avendo chiuso a Ferrara, che probabilità c'è che chiudano anche unibo secondo voi?",1.0,neutral
+300,"non ho fonti ma ho appena sentito su https://www3.nhk.or.jp/nhkworld/en/live/ che apparentemente il virus non è originato dai wet market di wuhan, c'è uno studio in cinese che va in dettagli, probabilmente se ne verrà a sapere domani o fra qualche giorno.",1.0,neutral
+301,"Rinviate Inter-Samp, Verona-Cagliari e Atalanta-Sassuolo",1.0,neutral
+302,"come mai in Italia il numero di contagiati è così alto, mentre Germania e Francia sono riusciti a contenere l'aumento dei contagi? Cosa non abbiamo fatto di diverso?",1.0,negative
+303,"Ragazzi qualcuno di voi con sintomi ha chiamato il 112? Vorrei sapere la vostra esperienza. Una mia amica di Milano che lavora nel settore della moda e quindi nell'ultimo periodo era parecchio in giro, con 39 di febbre e tosse da 3 giorni, le hanno detto che se non è stata a stretto contatto con i casi confermati non le faranno il tampone. E' uno scherzo? Posso capire se fosse di una città non a rischio, ma a Milano?",1.0,negative
+304,"Scusate la domande beota, non so nemmeno se sia consona al thread, ma se dovessero sospendersi le lezioni universitarie che succederebbe ai corsi, *gone for good*? Durante questo semestre dovrei frequentare un corso che, appunto, in genere si fa durante il secondo semestre. Se dovesse saltare a causa di questa crisi dovrei aspettare 12 mesi prima di poterlo frequentare di nuovo? Lo so che sono cretino, ma la cosa che mi dà più fastidio della situazione corrente è non poter frequentare le lezioni in pace (visto che ovviamente si diffonderà anche nell'Urbe), che sono la cosa che preferisco dell'università. Non è tanto la fine del mondo quanto lo sarebbe contrarre il virus, ma sono comunque molto infastidito, stavo hyppando questi due corsi da mesi. Scusatemi ancora il rant che non c'entra un cazzo, grazie per aver letto. :\",1.0,negative
+305,Il paziente zero è un pangolino scappato da un mercato cinese a Prato.,1.0,negative
+306,Secondo voi dovrebbero interrompere già i voli?,1.0,neutral
+307,Cos'è il periodo d'incubazione?,1.0,neutral
+308,Ma se uno è passato a Milano negli ultimi 15-20 giorni deve considerarsi a rischio come fosse passato da wuhan?,1.0,neutral
 309,"Riguardo al caso di Mira (soprattutto per chi abita in zona) ho letto che il signore abitava a Oriago via Ghebba ma stando a quello che ha detto il vicino di casa prima che il tipo venisse ricoverato é stato in casa per una decina di giorni
 
-Fonti non molto ufficiose basate su commenti FB al post del sindaco di Mira",,a
+Fonti non molto ufficiose basate su commenti FB al post del sindaco di Mira",1.0,neutral
 310,"Sapete la cosa che mi fa venire più i brividi? L'idea di venire confinata in casa come sta succedendo in Cina.
 
-Da perfetta asociale ho sempre preferito stare in casa, ma la possibilità di non poter più uscire neanche una corsetta al parco mi fa sbarellare. Poi abito in un appartamento, figuriamoci. Penso andrei di matto e dovrebbero ricoverarmi con un TSO",,a
+Da perfetta asociale ho sempre preferito stare in casa, ma la possibilità di non poter più uscire neanche una corsetta al parco mi fa sbarellare. Poi abito in un appartamento, figuriamoci. Penso andrei di matto e dovrebbero ricoverarmi con un TSO",1.0,negative
 311,"Mio nonno cade e si ruppe l'anca, attivissimo, gran camminatore, da lì a due settimane morì.
 
 Una cara signora anziana che conoscevo mi cadde sotto agli occhi, lei durò di più, ma dopo un mese e due operazioni anche lei morì.
@@ -909,24 +909,24 @@ Uno che conoscevo al mare, da piccoli, si sfracellò sugli scogli, rimanendoci. 
 
 Ora questo non vuol dire che lanciandosi da un dirupo non ci si faccia male, o che con la giusta dose di sfiga anche uno scivolone in bagno non possa significare la fine, ma bastano le ciabattine e la giusta dose di attenzione, non serve lasciarsi andare al catastrofismo fatalista.
 
-A meno che non stiate larpando un gdr basato su twd or some shit, in quel caso good day to you sir",,a
+A meno che non stiate larpando un gdr basato su twd or some shit, in quel caso good day to you sir",1.0,negative
 312,"Trovo che i media stiano cercando di spaventare tutti quando il problema è più piccolo di quello che sembra.
 
 Gli esperti non sembrano particolarmente preoccupati e per una che conosco(laureata in biologia e professoressa) è solo una questione di tempo prima che il vaccino venga fatto in massa.
 
-Di più non so, questa è la mia opinione però.",,a
-313,Scorte e razioni come siamo messi?,,a
-314,Ma nelle città in quarantena i netturbini lavorano lo stesso? Perché in tal caso sono spacciato ☠️,,a
-315,Ma c’è qualche rischio serio che blocchino gli aeroporti? Io martedì parto per l’erasmus,,a
-316,Secondo voi è da incoscienti prendere il treno la settimana prossima? Verona-Venezia-Trieste A/R,,a
+Di più non so, questa è la mia opinione però.",1.0,negative
+313,Scorte e razioni come siamo messi?,1.0,neutral
+314,Ma nelle città in quarantena i netturbini lavorano lo stesso? Perché in tal caso sono spacciato ☠️,1.0,neutral
+315,Ma c’è qualche rischio serio che blocchino gli aeroporti? Io martedì parto per l’erasmus,1.0,neutral
+316,Secondo voi è da incoscienti prendere il treno la settimana prossima? Verona-Venezia-Trieste A/R,1.0,neutral
 317,"
 90 giorni e forse un vaccino
 
-https://immunofrontiers.com/maryland-based-biotech-company-intends-to-develop-coronavirus-vaccine-within-90-days",,a
-318,[deleted],,a
-319,Oggi volo da Bologna verso il Nord Europa. È necessario portare la macherina in aeroporto e durante il volo o posso farne a meno?,,a
-320,https://www.lastampa.it/cronaca/2020/02/23/news/coronavirus-walter-ricciardi-dell-oms-grave-errore-non-mettere-in-quarantena-le-persone-arrivate-in-italia-dalla-cina-1.38504030,,a
-321,Boh qui a Trento hanno chiuso dalle università all'asilo nido e a mia sorella hanno annullato la partita di pallavolo. Ritengo ci sia una isteria di massa allarmante. È vero che un po' di pericolo c'è ma principalmente è un virus poco pericoloso. Certo c'è da stare attenti ma così si esagera,,a
+https://immunofrontiers.com/maryland-based-biotech-company-intends-to-develop-coronavirus-vaccine-within-90-days",1.0,neutral
+318,[deleted],1.0,neutral
+319,Oggi volo da Bologna verso il Nord Europa. È necessario portare la macherina in aeroporto e durante il volo o posso farne a meno?,1.0,neutral
+320,https://www.lastampa.it/cronaca/2020/02/23/news/coronavirus-walter-ricciardi-dell-oms-grave-errore-non-mettere-in-quarantena-le-persone-arrivate-in-italia-dalla-cina-1.38504030,1.0,neutral
+321,Boh qui a Trento hanno chiuso dalle università all'asilo nido e a mia sorella hanno annullato la partita di pallavolo. Ritengo ci sia una isteria di massa allarmante. È vero che un po' di pericolo c'è ma principalmente è un virus poco pericoloso. Certo c'è da stare attenti ma così si esagera,1.0,negative
 322,"**TL; DR** Vi propongo un wall of text con analisi a scatole cinesi (ah ah) della situazione odierna.
 
 Se guardiamo la mappa del Johns Hopkins vediamo che l'Italia riporta un numero di casi (62 ad ora) superiore UK + DE + FR + NL + ES sommati.
@@ -986,22 +986,22 @@ A quando un articolo di Sofri / ilPost della serie ""Notizie che non lo erano""?
 
 
 
-Statemi bene (ehm...)",,a
-323,La cosa positiva è che lunedì non ho lezione e quindi posso studiare per bene e avere ore a disposizione per  lavorare a progetti personali,,a
-324,Segnalo:  [https://docs.google.com/spreadsheets/d/1IRvfDn\_MleCqFtLhHS0kSxlUwwdp3QVdgVRYIW0k3NE/](https://docs.google.com/spreadsheets/d/1IRvfDn_MleCqFtLhHS0kSxlUwwdp3QVdgVRYIW0k3NE/),,a
-325,ho sentito su internet che un vaccino si potrebbe fare in 4 mesi invece di 12 mesi neanche se si accellerasserò tutte le certificazioni e si iniziasse a sperimentare di più...,,a
-326,[removed],,a
-327,Devo partire settimana prossima per il portogallo. Che faccio?,,a
-328,"Sono momentaneamente a Milano per delle visite di controllo e ho il viaggio di ritorno prenotato per mercoledì. Che dite, lascio perdere le visite e cerco un volo il prima possibile? Non mi preoccupa tanto il virus, quanto il possibile (?) blocco dei viaggi aerei.",,a
-329,Ho quel mal di testo da febbre in cui ti fa male muover la testa...speriamo bene,,a
+Statemi bene (ehm...)",1.0,negative
+323,La cosa positiva è che lunedì non ho lezione e quindi posso studiare per bene e avere ore a disposizione per  lavorare a progetti personali,1.0,positive
+324,Segnalo:  [https://docs.google.com/spreadsheets/d/1IRvfDn\_MleCqFtLhHS0kSxlUwwdp3QVdgVRYIW0k3NE/](https://docs.google.com/spreadsheets/d/1IRvfDn_MleCqFtLhHS0kSxlUwwdp3QVdgVRYIW0k3NE/),1.0,neutral
+325,ho sentito su internet che un vaccino si potrebbe fare in 4 mesi invece di 12 mesi neanche se si accellerasserò tutte le certificazioni e si iniziasse a sperimentare di più...,1.0,positive
+326,[removed],1.0,neutral
+327,Devo partire settimana prossima per il portogallo. Che faccio?,1.0,neutral
+328,"Sono momentaneamente a Milano per delle visite di controllo e ho il viaggio di ritorno prenotato per mercoledì. Che dite, lascio perdere le visite e cerco un volo il prima possibile? Non mi preoccupa tanto il virus, quanto il possibile (?) blocco dei viaggi aerei.",1.0,neutral
+329,Ho quel mal di testo da febbre in cui ti fa male muover la testa...speriamo bene,1.0,positive
 330,"Mi spiace perché ci rimetteranno molti che non hanno colpe però c'è gente idiota che se le cerca.. mio cugino appena 20enne ha la ragazza che sta a nemmeno a 10km dal paese veneto dei due primi infetti di ieri.
 
 Aveva programmato di farla dormire a casa loro (già da tempo) per il fine settimana ma mi sarei aspettato che almeno miei zii dicessero che per questa settimana potevano pure evitare di vedersi, giusto per capire quanto grave è la situazione.. e invece tutti contenti condividono notizie sul virus ma se la portano in caso dove ci sono ovviamente anche bambini ed anziani. A me sti rischi gratuiti lasciano basito
 
-PS: non hanno una relazione così profonda da dire voglio stare con lei anche in questi momenti ecc..",,a
-331,"Io il 16 marzo dovrei andare alla Cosmoprof a Bologna, dite che sia meglio evitare per quest’anno? Ci sono sempre andato gli ultimi 6 anni, non sono un che si allarma molto però dopo i vari casi successi in questi giorni ho un po’ di paura, anche perché ci sono molti asiatici 😅",,a
-332,"dai, guardiamo il lato positivo, magari coronanonperdona ci risolve per sempre la sostenibilità pensionistica",,a
-333,"D*o impestato calcetti, maratone, il triathlon si é messo a fare sto pentito. Il crociato nella maniera più dolorosa possibile gli si doveva torcere",,a
+PS: non hanno una relazione così profonda da dire voglio stare con lei anche in questi momenti ecc..",1.0,negative
+331,"Io il 16 marzo dovrei andare alla Cosmoprof a Bologna, dite che sia meglio evitare per quest’anno? Ci sono sempre andato gli ultimi 6 anni, non sono un che si allarma molto però dopo i vari casi successi in questi giorni ho un po’ di paura, anche perché ci sono molti asiatici 😅",1.0,negative
+332,"dai, guardiamo il lato positivo, magari coronanonperdona ci risolve per sempre la sostenibilità pensionistica",1.0,positive
+333,"D*o impestato calcetti, maratone, il triathlon si é messo a fare sto pentito. Il crociato nella maniera più dolorosa possibile gli si doveva torcere",1.0,negative
 334,"Ricevo e inoltro esattamente come ho ricevuto
 
 
@@ -1012,19 +1012,19 @@ Dott Rossaro: coronavirus e vit c
 [23/2, 10:03] Luca: I messaggi sulla diffusione del coronavirus, ora anche su WhatsApp, sono molto pericolosi, più che per il virus, per la forza creatrice del nostro pensiero che se diventa collettivo (come lo è già) rafforza l'espandersi della paura. Ma molti non sanno che questo è tutto uno sporco gioco politico e di denaro. Quando uscirà il vaccino le multinazionali si faranno una grande risata e si riempiranno le tasche di soldi. Ma soprattutto, siccome il pensiero è creatore se si alimenta la paura, la paura stessa rende il   sistema immunitario più fragile e attrae ancor di più questo stato di malattia. Invece bisogna creare una scia di forza di guarigione che contrasti questo. I gruppi che conoscono l'energia e l'autoguarigione devono riunirsi e fare meditazioni collettive per contrastare questo pensiero del coronavirus. Mi auguro che chi conosce l'uso dell'energia come autoguarigione si adoperino per aiutare le persone a prendere coscienza coscienza che questi sono giochi manipolativi di potere e vanno assolutamente fermati NON CONDIVISI!!!!
 Questo è il messaggio da condividere!!!!!
 Avviamo tutti insieme un processo di pulizia e autoguarigione dal coronavirus.
-CONDIVIDETE QUESTO MESSAGGIO!!!!",,a
-335,Non ho ancora capito se c'è una certa probabilità che il virus possa mutare ?,,a
-336,"Gira una notizia su fb (non so quanto attendibile) che in Australia abbiano trovato o siano vicini a una cura? Ho perso il link mentre scrollavo, qualcuno ne sa di più?",,a
-337,https://www.repubblica.it/salute/medicina-e-ricerca/2020/02/22/news/coronavirus_vaccino_australiano-249293807/,,a
+CONDIVIDETE QUESTO MESSAGGIO!!!!",1.0,positive
+335,Non ho ancora capito se c'è una certa probabilità che il virus possa mutare ?,1.0,neutral
+336,"Gira una notizia su fb (non so quanto attendibile) che in Australia abbiano trovato o siano vicini a una cura? Ho perso il link mentre scrollavo, qualcuno ne sa di più?",1.0,neutral
+337,https://www.repubblica.it/salute/medicina-e-ricerca/2020/02/22/news/coronavirus_vaccino_australiano-249293807/,1.0,neutral
 338,"A Wuhan morto un altro medico, è il terzo
 
 Un altro medico, il terzo, della città cinese di Wuhan è morto a causa del coronavirus, secondo l'account ufficiale di WeChat del Wuhan Xiehe Jiangbei Hospital, dove il medico lavorava nel reparto di gastroenterologia. Xia Sisi, 29 anni, è stata ricoverata in ospedale il 19 gennaio, e poi trasferita all'ospedale Zhongnan dell'Universita' di Wuhan, dove il suo stato di salute è peggiorato.   ""Alle 6:30 della mattina del 23 febbraio 2020, è morta all'ospedale Zhongnan dell'Universita' di Wuhan, dopo che tutte le misure di soccorso erano state esaurite. Esprimiamo le nostre più sentite condoglianze per la sfortunata scomparsa della dottoressa Xia Sisi e le condoglianze alla sua famiglia"", afferma l'ospedale in una dichiarazione. Finora più di 3.000 dipendenti dell'ospedale sono stati contagiati dal virus.
 
 https://tg24.sky.it/cronaca/2020/02/23/coronavirus-italia-ultime-notizie-diretta.html
 
-A rischio sono solo i vecchi (cit.)",,a
-339,[deleted],,a
-340,Tempo di abbandonare questo subreddit per qualche mese per evitare che il mio cervello collassi alla potenza dell'ignoranza.,,a
+A rischio sono solo i vecchi (cit.)",1.0,negative
+339,[deleted],1.0,neutral
+340,Tempo di abbandonare questo subreddit per qualche mese per evitare che il mio cervello collassi alla potenza dell'ignoranza.,1.0,negative
 341,"Ieri Conte ha dichiarato che non può bloccare l'economia e quindi le persone entrano ed escono liberamente dalla Nazione.
 Nel mentre l'Europa dorme, come spesso accade, e non blocca nulla.
 Conte prima dice ""la salute prima di tutto"" e poi lascia tutto invariato contingentando solo le aree focolaio. Per chi sgarra?
@@ -1035,63 +1035,63 @@ Chi proveniva da aree a rischio doveva andare in quarantena obbligatoria oppure 
 Come hanno fatto in Australia.
 L’Australia ha bloccato chiunque avesse il passaporto cinese, onde evitare giri sospetti. Nello stesso tempo ha permesso ai tantissimi cinesi con passaporto australiano di tornare in Australia immediatamente, e scontare la quarantena e permettendo loro di lavorare da casa col telelavoro, oppure, se provenienti da aree di alto rischio li ha isolati per due settimane nell’isola tra di Christmas Island. Risultato? 12 infettati subito a gennaio (era il più alto fuori dalla Cina) ma da allora nessun altro infettato e nessun morto.
 Su una cosa ho dei dubbi, sul periodo d'incubazione. Qualcuno ha parlato anche di un mese. 
-Siccome questo virus non si conosce, andrebbe trattato con la massima allerta e precauzione.",,a
+Siccome questo virus non si conosce, andrebbe trattato con la massima allerta e precauzione.",1.0,negative
 342,"Dato che vedo che pure su 'sto subreddit dilagano il panico e le voci incontrollate, toh. Prego.
 
-[https://www.docdroid.net/eHmi7pK/dossier-coronavirus-def-21-02-2020-compresso.pdf](https://www.docdroid.net/eHmi7pK/dossier-coronavirus-def-21-02-2020-compresso.pdf)",,a
-343,[removed],,a
-344,[deleted],,a
-345,What are the chances the Amalfi coast cities shut down as well?,,a
-346,[deleted],,a
-347,dov’è quello che nell’altro thread mi chiedeva le fonti quando parlavo di trasmissione asintomatica?,,a
+[https://www.docdroid.net/eHmi7pK/dossier-coronavirus-def-21-02-2020-compresso.pdf](https://www.docdroid.net/eHmi7pK/dossier-coronavirus-def-21-02-2020-compresso.pdf)",1.0,negative
+343,[removed],1.0,neutral
+344,[deleted],1.0,neutral
+345,What are the chances the Amalfi coast cities shut down as well?,1.0,neutral
+346,[deleted],1.0,neutral
+347,dov’è quello che nell’altro thread mi chiedeva le fonti quando parlavo di trasmissione asintomatica?,1.0,neutral
 348,"https://www.ilfattoquotidiano.it/2020/02/23/coronavirus-il-virologo-di-perri-fenomeno-banale-simile-allinfluenza-mortalita-legata-a-pazienti-anziani-con-patologie/5714626/
 
-Io non ci sto capendo nulla, il virilogo Di Perri tutto sommato è tranquillo nel parlarne, tant'è che lo paragona all'influenza stagionale mentre Burioni è decisamente meno positivo.",,a
-349,[deleted],,a
+Io non ci sto capendo nulla, il virilogo Di Perri tutto sommato è tranquillo nel parlarne, tant'è che lo paragona all'influenza stagionale mentre Burioni è decisamente meno positivo.",1.0,neutral
+349,[deleted],1.0,neutral
 350,"Sono curioso se il Conte darà l'ordine di sparare nel caso ci sia una fuga di massa dalle zone di quarantena, caso che conoscendo gli italiani mi pare plausibile. Probabilmente si starà preparando guardando Virus Letale e leggendo The Stand.
 
-Allo stesso modo mi incuriosisce se l'esercito si scanserà di fronte all'orda  di gente che tossisce e diffonde virus nell'aria o terrà le posizioni.",,a
-351,Mia madre è partita oggi per Roma e settimana prossima per Parma.  Che bisogna fare?,,a
-352,Gerardo D'Amico vero pompiere su RaiNews che cerca di abbattere i sensazionalismi <3,,a
-353,"Per oggi avevo prenotato le terme di Boario! Sono rimaste aperte e penso che ci andrò in coppia, mi chiedo però quanto sia giusta questa scelta... Voi che dite?",,a
+Allo stesso modo mi incuriosisce se l'esercito si scanserà di fronte all'orda  di gente che tossisce e diffonde virus nell'aria o terrà le posizioni.",1.0,negative
+351,Mia madre è partita oggi per Roma e settimana prossima per Parma.  Che bisogna fare?,1.0,neutral
+352,Gerardo D'Amico vero pompiere su RaiNews che cerca di abbattere i sensazionalismi <3,1.0,positive
+353,"Per oggi avevo prenotato le terme di Boario! Sono rimaste aperte e penso che ci andrò in coppia, mi chiedo però quanto sia giusta questa scelta... Voi che dite?",1.0,neutral
 354,"Lo scrivo qui, ma non sono effettivamente sicura sia il posto giusto. Come molti altri hanno scritto su questo gruppo, la gita scolastica è stata annullata, ma se i ragazzi partissero per conto loro, tanto prenotazione di hotel e aereo ci sono già, senza professori? Magari risulteranno assenti per una settimana ma è effettivamente possibile?
-EDIT: aggiungo che è una domanda ipotetica, non partiremo e non siamo intenzionati a correre questo rischio e soprattutto a mettere in pericolo altre persone, non l'ho specificato prima, volevo solo sapere se tecnicamente era possibile",,a
-355,[deleted],,a
+EDIT: aggiungo che è una domanda ipotetica, non partiremo e non siamo intenzionati a correre questo rischio e soprattutto a mettere in pericolo altre persone, non l'ho specificato prima, volevo solo sapere se tecnicamente era possibile",1.0,neutral
+355,[deleted],1.0,neutral
 356,"https://www.lastampa.it/cronaca/2020/02/23/news/coronavirus-la-direttrice-del-laboratorio-di-analisi-dell-ospedale-sacco-non-e-pandemia-mi-sembra-follia-1.38506371
 
 Qualcuno ne ha già parlato in altri commenti?
 Io capisco il punto di vista della dottoressa, però non mi pare che per l'influenza si attuino gli stessi piani di prevenzione e controllo che stiamo implementando noi in Italia, la Cina, la Corea ds etc..
 Perché non annullano il MWC o altre fiere internazionali per l'influenza? Qualcosa sotto ci sarà no?
-Mo non voglio fare il gomblottista però...",,a
-357,È tutto così divertente!,,a
-358,Spero che non mi blocchino la gita a scuola sennò mi incazzo davvero,,a
-359,[deleted],,a
-360,[deleted],,a
+Mo non voglio fare il gomblottista però...",1.0,negative
+357,È tutto così divertente!,1.0,positive
+358,Spero che non mi blocchino la gita a scuola sennò mi incazzo davvero,1.0,negative
+359,[deleted],1.0,neutral
+360,[deleted],1.0,neutral
 361,"quando avevo detto che bisognava chiudere le frontiere bloccare i voli da tutto il mondo e fare quarantena a randa mi avete downvotato fino alla morte...adesso ci sono 60 casi quasi, siete contenti?....e sticazzi....sempre quando i buoi sono scappati dal recinto oh...eh poi questo politicamente corretto è veramente scandaloso.
-al governo veramente Conte sempre a tranquillizzare, invece di dire(porca p++++++a) che bisogna bloccare tutto e setacciare i peli del culo della gente che arriva eccc....",,a
+al governo veramente Conte sempre a tranquillizzare, invece di dire(porca p++++++a) che bisogna bloccare tutto e setacciare i peli del culo della gente che arriva eccc....",1.0,negative
 362,"Prima di fare diventare medici i medici dovrebbe essere necessario un qualche test di intelligenza/ logica, non posso credere che siamo stati in mano a gente così stupida da trattare un ricoverato per polmonite come un normalissimo paziente, dando per scontato che per qualche motivo l'Italia fosse intoccabile da questo virus. Roba da pazzi veramente, anche a un bambino di 4 anni sarebbe venuto il pallino in testa
 
-Complimenti alla sanità italiana, top",,a
-363,[deleted],,a
-364,"i primi due casi quindi erano 2 cinesi turisti a roma provenienti da wuhan, ciò accaduto il 30 gennaio, vabbè secondo me il governo se lo merita, mi spiace per tutte le vittime ma come cazzo fai a controllargli il passaporto e farli entrare dai..",,a
-365,Questa è la notizia più grave che nessuno sta cagando. Il paziente zero va ancora in giro beato.,,a
-366,"""happiness is real only when shared""",,a
-367,Ma come cazzo si fa,,a
-368,Ma questa cosa può avere risvolti legali?,,a
-369,Un vero genio,,a
-370,Ma porca di quella mignotta imbruttita,,a
-371,questa non la ho capita.. e chi gliel'ha permesso? facciamo ridere..,,a
-372,Ci riprendiamo Fiume facendo scappare all'indietro i croati!,,a
-373,ti conviene tornare con una scorta di disinfettanti e detergenti per mani. Pare che faresti una fortuna.,,a
-374,"Mi raccomando, al ritorno tossisci vistosamente a fauci spalancate!",,a
-375,"Io ho molto apprezzato il messaggio del ristoratore cinese che dice ""non bisogna avere paura degli italiani""",,a
-376,Sbaglio o quello razzista qui sei proprio tu? Razzismo contro i meridionali è sempre razzismo.,,a
+Complimenti alla sanità italiana, top",1.0,negative
+363,[deleted],1.0,neutral
+364,"i primi due casi quindi erano 2 cinesi turisti a roma provenienti da wuhan, ciò accaduto il 30 gennaio, vabbè secondo me il governo se lo merita, mi spiace per tutte le vittime ma come cazzo fai a controllargli il passaporto e farli entrare dai..",1.0,negative
+365,Questa è la notizia più grave che nessuno sta cagando. Il paziente zero va ancora in giro beato.,1.0,negative
+366,"""happiness is real only when shared""",1.0,positive
+367,Ma come cazzo si fa,1.0,negative
+368,Ma questa cosa può avere risvolti legali?,1.0,neutral
+369,Un vero genio,1.0,positive
+370,Ma porca di quella mignotta imbruttita,1.0,negative
+371,questa non la ho capita.. e chi gliel'ha permesso? facciamo ridere..,1.0,negative
+372,Ci riprendiamo Fiume facendo scappare all'indietro i croati!,1.0,positive
+373,ti conviene tornare con una scorta di disinfettanti e detergenti per mani. Pare che faresti una fortuna.,1.0,positive
+374,"Mi raccomando, al ritorno tossisci vistosamente a fauci spalancate!",1.0,negative
+375,"Io ho molto apprezzato il messaggio del ristoratore cinese che dice ""non bisogna avere paura degli italiani""",1.0,positive
+376,Sbaglio o quello razzista qui sei proprio tu? Razzismo contro i meridionali è sempre razzismo.,1.0,negative
 377,"ho preso così tante scatolette in offerta che posso campare di pasta col tonno per mesi
 
 
-ready perfectly",,a
-378,I primi exit poll dicono MORTE,,a
-379,[deleted],,a
+ready perfectly",1.0,positive
+378,I primi exit poll dicono MORTE,1.0,negative
+379,[deleted],1.0,neutral
 380,"Vero, è uno degli oggetti più luridi che maneggiamo tutti i giorni insieme ai contanti.",,a
 381,Grazie per la nuova ansia,,a
 382,"Io per deformazione professionale avevo l'abitudine (specialmente d'estate) di utilizzare una cover apposita per lo smartphone quando sapevo di dover andare in posti ""sporchi"", per poi pulire cover e cellulare con alcool oppure lysoform o amuchina, a seconda di quello che ho a portata di mano.
